@@ -40,6 +40,9 @@
             <ul class="nav navbar-nav">
               <li class="active"><a ui-sref="home">Home</a></li>
               <li><a ui-sref="about">About</a></li>
+              <li><a ui-sref="new">Itineraries</a></li>
+              <li><a ui-sref="index">Itineraries All</a></li>
+              <li><a ui-sref="show">Event</a></li>
             </ul>
           </div>
         </div>
@@ -49,24 +52,6 @@
     <div class="container">
     <div ui-view=""></div>
     </div>
-
-    <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
-    </div>
-
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -86,6 +71,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/itineraries.js"></script>
         <!-- endbuild -->
 </body>
 </html>
