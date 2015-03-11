@@ -13,21 +13,21 @@ angular
     'ngAnimate',
     'ngCookies',
     'ngResource',
-    'ngRoute',
+    'ui.router',
     'ngSanitize',
     'ngTouch'
   ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
+  .config(function ($stateProvider, $urlRouterProvider) {
+    $stateProvider
+      .state('home', {
+        url: '/',
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/about', {
+      .state('about', {
+        url: '/about',
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
       });
+      $urlRouterProvider.otherwise('home');
   });
