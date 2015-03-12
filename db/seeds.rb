@@ -52,6 +52,6 @@
     { name: 'My Super Cool Itinerary', date: 20191213, user_id: 1 },
     { name: 'My Sweet Itinerary', date: 20151213, user_id: 1 },
     { name: 'Sunday', date: 20150101, user_id: 2 },
-    { name: 'Friday May 5th', date: 20220931, user_id: 3 },
-    { name: 'Friday May 5th', date: 20331219, user_id: 3 }
+    { name: 'Friday May 5th', date: 20121113, user_id: 3 },
+    { name: 'Friday May 5th', date: 20130914, user_id: 3 }
     ])

@@ -17,7 +17,10 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
-  .config(function ($stateProvider, $urlRouterProvider) {
+  .config(function ($httpProvider, $stateProvider, $urlRouterProvider) {
+    
+    $httpProvider.defaults.withCredentials = true;
+
     $stateProvider
       .state('home', {
         url: '/',
@@ -30,10 +33,25 @@ angular
         controller: 'AboutCtrl'
       })
       //Itinerary Routes
-      .state('new', {
-        url: '/new',
-        templateUrl: 'views/itineraries/new.html',
-        controller: 'ItinerariesCtrl'
+      .state('itineraries', {
+        url: '/itineraries',
+        templateUrl: 'views/itineraries/index.html',
+        controller: 'ItinerariesCtrl',
+        onEnter: ['$state', 'AuthService', function($state, AuthService) {
+              if (!AuthService.isAuthenticated()) {
+                $state.go('home');
+          }
+        }]
+      })
+      .state('login', {
+          url: '/login',
+          templateUrl: 'views/login.html',
+          controller: 'AuthCtrl'
+      })
+      .state('register', {
+          url: '/register',
+          templateUrl: 'views/register.html',
+          controller: 'AuthCtrl'
       })
       .state('show', {
         url: '/show',
