@@ -1,1 +1,13 @@
 <h1>Itineraries New</h1>
+
+  <form ng-submit="addItinerary()">
+    <label>New Itinerary</label>
+    <input placeholder="Name"
+           ng-model="newItineraryName"
+           ng-disabled="saving" autofocus>
+    <input placeholder="Date"
+           ng-model="newItineraryDate"
+           ng-disabled="saving" autofocus
+           onaftersave="getItineraries">
+    <input type="submit" value="Submit">
+  </form>

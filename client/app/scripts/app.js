@@ -53,14 +53,14 @@ angular
           templateUrl: 'views/register.html',
           controller: 'AuthCtrl'
       })
+      .state('new', {
+        url: '/create',
+        templateUrl: 'views/itineraries/new.html',
+        controller: 'ItinerariesCtrl'
+      })
       .state('show', {
         url: '/show',
         templateUrl: 'views/itineraries/show.html',
-        controller: 'ItinerariesCtrl'
-      })
-      .state('index', {
-        url: '/index',
-        templateUrl: 'views/itineraries/index.html',
         controller: 'ItinerariesCtrl'
       });
       $urlRouterProvider.otherwise('home');

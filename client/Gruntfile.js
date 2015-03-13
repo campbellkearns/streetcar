@@ -78,7 +78,7 @@ module.exports = function (grunt) {
           port: 3000
         }
       ],
-      livereload: {
+   livereload: {
         options: {
           open: true,
           middleware: function (connect, options) {
@@ -398,12 +398,14 @@ module.exports = function (grunt) {
             'images/{,*/}*',
             'styles/fonts/{,*/}*.*'
           ]
-        }, {
+        },
+        { 
           expand: true,
           cwd: '.tmp/images',
           dest: '<%= yeoman.dist %>/images',
           src: ['generated/*']
-        }, {
+        }, 
+        {
           expand: true,
           cwd: '.',
           src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
@@ -497,6 +499,5 @@ module.exports = function (grunt) {
     'build'
   ]);
   grunt.registerTask('heroku:production', 'build');
-
   grunt.loadNpmTasks('grunt-connect-proxy');
 };
