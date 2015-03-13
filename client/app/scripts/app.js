@@ -32,6 +32,7 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+
       //Itinerary Routes
       .state('itineraries', {
         url: '/itineraries',
@@ -43,6 +44,23 @@ angular
           }
         }]
       })
+      .state('itineraries-new', {
+        url: '/itineraries/create',
+        templateUrl: 'views/itineraries/new.html',
+        controller: 'ItinerariesCtrl'
+      })
+      .state('itineraries-show', {
+        url: 'itineraries/:id',
+        templateUrl: 'views/itineraries/show.html',
+        controller: 'ShowItineraryCtrl',
+        onEnter: ['$state', 'AuthService', function($state, AuthService) {
+          console.log('onEnter itineraries show');
+              if (!AuthService.isAuthenticated()) {
+                $state.go('home');
+          }
+        }]        
+      })
+
       .state('login', {
           url: '/login',
           templateUrl: 'views/login.html',
@@ -52,16 +70,6 @@ angular
           url: '/register',
           templateUrl: 'views/register.html',
           controller: 'AuthCtrl'
-      })
-      .state('new', {
-        url: '/create',
-        templateUrl: 'views/itineraries/new.html',
-        controller: 'ItinerariesCtrl'
-      })
-      .state('show', {
-        url: '/show',
-        templateUrl: 'views/itineraries/show.html',
-        controller: 'ItinerariesCtrl'
       });
       $urlRouterProvider.otherwise('home');
   });

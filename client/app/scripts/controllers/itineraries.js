@@ -17,19 +17,6 @@ angular.module('streetCarApp')
 
   getItineraries();
 
-  //SHOW ITINERARY
-  $scope.getItinerary = function(itinerary) {
-    return ItineraryService.getItinerary(itinerary)
-    .success(function(data) {
-      $scope.itinerary = data;
-      
-    })
-    .error(function(data /*, status*/) {
-      console.log(data);
-      //alert('EDIT ERROR: ' + status + ' : ' + JSON.stringify(data));
-    });
-  };
-
 
   //ADDING A ITINERAY [NEW/CREATE]
   $scope.addItinerary = function() {
