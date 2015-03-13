@@ -5,27 +5,23 @@ class Api::ItinerariesController < ApplicationController
   # GET /itineraries
   # GET /itineraries.json
   def index
-    @itineraries = Itinerary.all
-
+    @itineraries = current_user.itineraries
+    
     render json: @itineraries
   end
 
   # GET /itineraries/1
   # GET /itineraries/1.json
   def show
+    @itinerary = current_user.itineraries.find(params[:id])
     render json: @itinerary
   end
 
   # POST /itineraries
   # POST /itineraries.json
   def create
-    @itinerary = Itinerary.new(itinerary_params)
-
-    if @itinerary.save
-      render json: @itinerary, status: :created, location: @itinerary
-    else
-      render json: @itinerary.errors, status: :unprocessable_entity
-    end
+    itinerary = current_user.itineraries.create!(itinerary_params)
+    render json: itinerary, status: 201 # , location: [:api, itineraries]
   end
 
   # PATCH/PUT /itineraries/1
@@ -55,7 +51,7 @@ class Api::ItinerariesController < ApplicationController
     end
 
     def itinerary_params
-      params[:itinerary]
+      params.require(:itinerary).permit(:name, :date)
     end
 
     def check_permission
