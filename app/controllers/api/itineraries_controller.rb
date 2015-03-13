@@ -5,14 +5,16 @@ class Api::ItinerariesController < ApplicationController
   # GET /itineraries
   # GET /itineraries.json
   def index
-    @itineraries = Itinerary.all
 
+    @itineraries = current_user.itineraries
+    
     render json: @itineraries
   end
 
   # GET /itineraries/1
   # GET /itineraries/1.json
   def show
+    @itinerary = current_user.itineraries.find(params[:id])
     render json: @itinerary
   end
 

@@ -2,7 +2,7 @@
 
 <ul>
   <li ng-repeat="itinerary in itineraries">
-    <a ui-sref="show" ng-click="getItinerary(itinerary.id)">
+    <a ui-sref="show" ng-click="getItinerary(itinerary)">
     {{ itinerary.name }} - {{ itinerary.date | date:'EEEE, MMMM d, yyyy'}}
     </a>
     - <button class="button" ng-click="destroyItinerary(itinerary)">Delete</button>
