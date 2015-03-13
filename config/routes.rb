@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
-  scope '/api' do
-    resources :users, except: [:new, :edit]
-    resources :itineraries
-  end
+  namespace :api do
+      # These resources are available from the AngularJS routes
+      # resources :itineraries, except [:new, :edit]
+      resources :itineraries, except: [:new, :edit]
+      resources :users, only: [:create, :show, :update, :destroy]
+      resources :sessions, only: [:index, :create]#, :destroy]
+      delete '/sessions', to: 'sessions#destroy'
+    end  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

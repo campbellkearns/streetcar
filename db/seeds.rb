@@ -51,7 +51,5 @@
  itineraries = Itinerary.create([
     { name: 'My Super Cool Itinerary', date: 20191213, user_id: 1 },
     { name: 'My Sweet Itinerary', date: 20151213, user_id: 1 },
-    { name: 'Sunday', date: 20150101, user_id: 2 },
-    { name: 'Friday May 5th', date: 20150930, user_id: 3 },
-    { name: 'Friday May 5th', date: 20331219, user_id: 3 }
+    { name: 'Sunday', date: 20150101, user_id: 2 }
     ])

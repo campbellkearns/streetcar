@@ -454,7 +454,7 @@ module.exports = function (grunt) {
       'clean:server',
       'wiredep',
       'concurrent:server',
-      'autoprefixer',
+      'autoprefixer:server',
       'configureProxies',
       'connect:livereload',
       'watch'
