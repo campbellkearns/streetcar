@@ -453,6 +453,7 @@ module.exports = function (grunt) {
       'wiredep',
       'concurrent:server',
       'autoprefixer:server',
+      'configureProxies',
       'connect:livereload',
       'watch'
     ]);
@@ -468,6 +469,7 @@ module.exports = function (grunt) {
     'wiredep',
     'concurrent:test',
     'autoprefixer',
+    'configureProxies',
     'connect:test',
     'karma'
   ]);
@@ -494,4 +496,7 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+  grunt.registerTask('heroku:production', 'build');
+
+  grunt.loadNpmTasks('grunt-connect-proxy');
 };

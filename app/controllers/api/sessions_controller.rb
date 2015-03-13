@@ -2,12 +2,10 @@ class Api::SessionsController < ApplicationController
 
   def index
     render json: current_user, status: 200
-    #Tells Angular if user is currently logged in
   end
 
-  #create a new session
   def create
-    user = User.find_by(email: params[:session][:email].downcase)
+    user = User.find_by(email: params[:session][:email])
     if user && user.authenticate(params[:session][:password])
       sign_in user
       render json: user, status: 200
