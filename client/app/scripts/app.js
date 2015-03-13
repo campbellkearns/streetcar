@@ -31,7 +31,7 @@ angular
       .state('about', {
         url: '/about',
         templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+        controller: 'MapCtrl'
       })
 
       //Itinerary Routes

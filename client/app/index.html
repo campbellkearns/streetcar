@@ -10,6 +10,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/mapbox.js/mapbox.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -72,12 +73,14 @@
     <script src="bower_components/leaflet/dist/leaflet.js"></script>
     <script src="bower_components/leaflet/dist/leaflet-src.js"></script>
     <script src="bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.js"></script>
+    <script src="bower_components/mapbox.js/mapbox.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/map.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/itineraries.js"></script>
         <script src="scripts/controllers/show_itinerary.js"></script>
@@ -85,6 +88,7 @@
         <script src="scripts/controllers/auth.js"></script>
         <script src="scripts/services/auth.js"></script>
         <script src="scripts/services/itinerary.js"></script>
+        <script src="scripts/services/map.js"></script>
         <!-- endbuild -->
 </body>
 </html>
