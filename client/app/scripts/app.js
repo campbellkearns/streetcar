@@ -31,7 +31,7 @@ angular
       })
       //Itinerary Routes
       .state('new', {
-        url: '/new',
+        url: '/create',
         templateUrl: 'views/itineraries/new.html',
         controller: 'ItinerariesCtrl'
       })
