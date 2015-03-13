@@ -7,9 +7,9 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
   users = User.create([
-    { name: 'Joe', email: 'joe@email.com', password: 'foobar' },
-    { name: 'Sally', email: 'sally@email.com', password: 'foobar' },
-    { name: 'Frank', email: 'frank@email.com', password: 'foobar' }
+    { name: 'Joe', email: 'joe@email.com', password_digest: 'foobar' },
+    { name: 'Sally', email: 'sally@email.com', password_digest: 'foobar' },
+    { name: 'Frank', email: 'frank@email.com', password_digest: 'foobar' }
     ])
 
   # Gerry's Example
@@ -52,6 +52,6 @@
     { name: 'My Super Cool Itinerary', date: 20191213, user_id: 1 },
     { name: 'My Sweet Itinerary', date: 20151213, user_id: 1 },
     { name: 'Sunday', date: 20150101, user_id: 2 },
-    { name: 'Friday May 5th', date: 20220931, user_id: 3 },
+    { name: 'Friday May 5th', date: 20150930, user_id: 3 },
     { name: 'Friday May 5th', date: 20331219, user_id: 3 }
     ])

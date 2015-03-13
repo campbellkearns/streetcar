@@ -78,11 +78,17 @@ module.exports = function (grunt) {
           port: 3000
         }
       ],
-      livereload: {
+   livereload: {
         options: {
           open: true,
-          middleware: function (connect) {
-            return [
+          middleware: function (connect, options) {
+            if (!Array.isArray(options.base)) {
+              options.base = [options.base];
+            }
+
+            // Setup the proxy
+            var middlewares = [
+              require('grunt-connect-proxy/lib/utils').proxyRequest,
               connect.static('.tmp'),
               connect().use(
                 '/bower_components',
@@ -94,6 +100,12 @@ module.exports = function (grunt) {
               ),
               connect.static(appConfig.app)
             ];
+
+            // Make directory browse-able.
+            var directory = options.directory || options.base[options.base.length - 1];
+            middlewares.push(connect.directory(directory));
+
+            return middlewares;
           }
         }
       },
@@ -386,12 +398,14 @@ module.exports = function (grunt) {
             'images/{,*/}*',
             'styles/fonts/{,*/}*.*'
           ]
-        }, {
+        },
+        { 
           expand: true,
           cwd: '.tmp/images',
           dest: '<%= yeoman.dist %>/images',
           src: ['generated/*']
-        }, {
+        }, 
+        {
           expand: true,
           cwd: '.',
           src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
@@ -440,7 +454,8 @@ module.exports = function (grunt) {
       'clean:server',
       'wiredep',
       'concurrent:server',
-      'autoprefixer:server',
+      'autoprefixer',
+      'configureProxies',
       'connect:livereload',
       'watch'
     ]);
@@ -456,6 +471,7 @@ module.exports = function (grunt) {
     'wiredep',
     'concurrent:test',
     'autoprefixer',
+    'configureProxies',
     'connect:test',
     'karma'
   ]);
@@ -482,4 +498,6 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+  grunt.registerTask('heroku:production', 'build');
+  grunt.loadNpmTasks('grunt-connect-proxy');
 };

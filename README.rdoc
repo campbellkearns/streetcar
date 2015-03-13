@@ -31,3 +31,6 @@ Please feel free to use a different markup language if you do not plan to run
 # User.find(3).itineraries.find(5).events.pluck(:name)
 # Event.where(category:1).sample.name
 # Event.all
+# Event.where(category:3).sample
+# Itinerary.where(user_id:2)
+# User.find(3).itinerary

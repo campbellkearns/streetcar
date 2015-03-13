@@ -1,1 +1,17 @@
 <h1>Itineraries Index</h1>
+
+<ul>
+  <li ng-repeat="itinerary in itineraries">
+    <a ui-sref="show" ng-click="getItinerary(itinerary.id)">
+    {{ itinerary.name }} - {{ itinerary.date | date:'EEEE, MMMM d, yyyy'}}
+    </a>
+    - <button class="button" ng-click="destroyItinerary(itinerary)">Delete</button>
+  </li>
+</ul>
+
+<br>
+<br>
+
+<a ui-sref="new" ng-click="getItinerary(itinerary)">Back To Itineraries</a>
+
+          
