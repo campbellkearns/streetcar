@@ -1,11 +1,8 @@
 <h1>Itineraries Show</h1>
 
-<h3>Name: {{ itinerary }}</h3>
-<h1>{{layers}}</h1>
-  
-<div id="map"></div>
-
 <div ng-controller='MapCtrl'>
   <leaflet markers="markers" center="center" layers="layers" width="640px" height="480px"></leaflet>
 </div>
 
+<h3>Name: {{ itinerary.name }}</h3><br>
+<h5>Name: {{ itinerary.date | date:'EEEE, MMMM d, yyyy' }}</h5>
