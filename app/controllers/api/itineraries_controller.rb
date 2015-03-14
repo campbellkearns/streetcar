@@ -6,7 +6,6 @@ class Api::ItinerariesController < ApplicationController
   # GET /itineraries.json
   def index
     @itineraries = current_user.itineraries
-    
     render json: @itineraries
   end
 

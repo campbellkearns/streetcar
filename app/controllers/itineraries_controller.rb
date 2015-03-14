@@ -14,7 +14,9 @@ class ItinerariesController < ApplicationController
   def create
     @itinerary = Itinerary.new(itinerary_params)
     if @itinerary.save
+      @events = Event.seed_itinerary_with_events(itinerary_params)
       render json: @itinerary, status: :created, location: @itinerary
+      render json: @events, status: :created, location: @events
     else
       render json: @itinerary.errors, status: :unprocessable_entity
     end      

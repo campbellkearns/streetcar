@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   namespace :api do
       # These resources are available from the AngularJS routes
       # resources :itineraries, except [:new, :edit]
+      resources :events
+      get 'events/get_event'
       resources :itineraries, except: [:new, :edit]
       resources :users, only: [:create, :show, :update, :destroy]
       resources :sessions, only: [:index, :create]#, :destroy]

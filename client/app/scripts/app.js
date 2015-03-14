@@ -61,6 +61,19 @@ angular
         }]        
       })
 
+      //Event Routes
+      .state('events', {
+        url: '/events/random',
+        templateUrl: 'views/itineraries/new.html',
+        controller: 'GetEventsCtrl',
+        onEnter: ['$state', 'AuthService', function($state, AuthService) {
+          console.log('onEnter itineraries show');
+              if (!AuthService.isAuthenticated()) {
+                $state.go('home');
+         }
+        }]        
+      })
+
       .state('login', {
           url: '/login',
           templateUrl: 'views/login.html',

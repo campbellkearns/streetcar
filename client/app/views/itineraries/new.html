@@ -11,3 +11,25 @@
            onaftersave="getItineraries">
     <input type="submit" value="Submit">
   </form>
+
+This is the Events Stuff:
+
+<div ng-controller='GetEventsCtrl'>
+  <ul>
+    <li ng-repeat="event in events">
+      <strong>{{ event.name }}</strong> 
+      <br>
+      {{ event.description }}
+      <br>
+      {{ event.address }}
+      <br>
+      {{ event.phone }}
+      <br>
+      {{ event.web_address }}
+      <br>
+      {{ event.image_address }}
+      <br>
+        <button  ng-click="destroyEvent()" >Get A New Event</button>
+    </li>
+  </ul>
+</div>

@@ -17,8 +17,7 @@ angular.module('streetCarApp')
 
   getItineraries();
 
-
-  //ADDING A ITINERAY [NEW/CREATE]
+  //ADDING AN ITINERAY [NEW/CREATE]
   $scope.addItinerary = function() {
     var newItinerary = { name: $scope.newItineraryName, 
                          date: $scope.newItineraryDate };
@@ -45,5 +44,6 @@ angular.module('streetCarApp')
       //alert('DESTROY ERROR: ' + status + ' : ' + JSON.stringify(data));
     });
   };
+
 
   });
