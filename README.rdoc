@@ -34,3 +34,8 @@ Please feel free to use a different markup language if you do not plan to run
 # Event.where(category:3).sample
 # Itinerary.where(user_id:2)
 # User.find(3).itinerary
+
+@itinerary = current_user.itineraries.find(params[:id])
+    @events = @itinerary.events
+    render json: @itinerary
+    render json: @events
