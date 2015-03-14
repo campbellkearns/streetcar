@@ -3,6 +3,9 @@
 <h3>Name: {{ itinerary }}</h3>
 <h1>{{layers}}</h1>
   
-<div ng-controller="MapCtrl">
-  <leaflet center="center" layers="layers" width="640px" height="480px"></leaflet>
+<div id="map"></div>
+
+<div ng-controller='MapCtrl'>
+  <leaflet markers="markers" center="center" layers="layers" width="640px" height="480px"></leaflet>
 </div>
+
