@@ -2,3 +2,15 @@
 
 <h3>Name: {{ itinerary.name }}</h3><br>
 <h5>Name: {{ itinerary.date | date:'EEEE, MMMM d, yyyy' }}</h5>
+
+<!-- Events -->
+<div ng-controller='ShowItineraryEventsCtrl'>
+  <ul ng-repeat="event in itineraryEvents">
+    <li> <strong>{{ event.name }}</strong> </li>
+    {{ event.description }}<br>
+    {{ event.address }}<br>
+    {{ event.phone }}<br>
+    {{ event.web_address }}<br>
+    {{ event.photo }}<br>
+  </ul>  
+</div>

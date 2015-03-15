@@ -20,6 +20,13 @@ class Api::ItinerariesController < ApplicationController
   # POST /itineraries.json
   def create
     itinerary = current_user.itineraries.create!(itinerary_params)
+    itinerary_id = current_user.itineraries.last
+    
+    events = params[:events]
+    events.each do |event|
+      itinerary_id = current_user.itineraries.last[:id]
+      EventsItinerary.create(itinerary_id: itinerary_id, event_id: event["id"])
+    end
     render json: itinerary, status: 201 # , location: [:api, itineraries]
   end
 
