@@ -3,7 +3,7 @@
 angular.module('streetCarApp')
 .controller('MapCtrl', function($scope) {
   var places = {};
-  var numberOfEvents = $scope.event.length;
+  var numberOfEvents = $scope.event;
   
   for(var i=0; i < numberOfEvents, i++;) {
 
