@@ -11,8 +11,8 @@ angular.module('streetCarApp')
     return $http.get('/api/itineraries/' + id);
   };
 
-  this.addItinerary = function(itinerary) {
-    return $http.post('/api/itineraries', { itinerary: itinerary } );
+  this.addItinerary = function(itinerary, events) {
+    return $http.post('/api/itineraries', { itinerary: itinerary , events: events } );
   };
 
   this.destroyItinerary = function(itinerary) {

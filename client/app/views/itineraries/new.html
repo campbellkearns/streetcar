@@ -1,6 +1,7 @@
 <h1>Itineraries New</h1>
 
-  <form ng-submit="addItinerary()">
+<div ng-controller='GetEventsCtrl'>
+  <form ng-submit="addEvents()">
     <label>New Itinerary</label>
     <input placeholder="Name"
            ng-model="newItineraryName"
@@ -8,15 +9,14 @@
     <input placeholder="Date"
            ng-model="newItineraryDate"
            ng-disabled="saving" autofocus
-           onaftersave="getItineraries">
+           onaftersave="getItineraries">      
     <input type="submit" value="Submit">
   </form>
 
 This is the Events Stuff:
 
-<div ng-controller='GetEventsCtrl'>
   <ul>
-    <li ng-repeat="event in events">
+    <li ng-repeat="event in events track by $index" >
       <strong>{{ event.name }}</strong> 
       <br>
       {{ event.description }}
@@ -29,7 +29,8 @@ This is the Events Stuff:
       <br>
       {{ event.image_address }}
       <br>
-        <button  ng-click="destroyEvent()" >Get A New Event</button>
+        <button ng-click="deleteEvent($index)" >Get A New Event</button>
     </li>
   </ul>
+
 </div>
