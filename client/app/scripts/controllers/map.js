@@ -1,22 +1,11 @@
 'use strict';
 
 angular.module('streetCarApp')
-.controller('MapCtrl', function($scope) {
-  var places = {};
-  var numberOfEvents = $scope.event;
-  
-  for(var i=0; i < numberOfEvents, i++;) {
-
-  }
-
+.controller('MapCtrl', function($scope, $http, leafletData) {
+  var i;
+  var events = [];
   angular.extend($scope, {
-    markers: {
-      testMarker: {
-        lat: 33.771,
-        lng: -84.414,
-        message: 'Name of place'
-      }
-    },
+    markers: [],
     center: {
       lat: 33.771,
       lng: -84.414,
@@ -37,6 +26,45 @@ angular.module('streetCarApp')
       }
     }
   });
+
+  // $scope.markers = {
+  //   place: {
+  //     lat: parseFloat(eventData.latitude),
+  //     lng: parseFloat(eventData.longitude)
+  //   }
+  // };
+
+
+  var eventData = [];
+
+  $http.get('api/events/2')
+    .success(function(data) {
+      for(i=0; i < data.length; i++) {
+        var eventData = {
+          name: data[i].name,
+          lat:  data[i].latitude,
+          lng:  data[i].longitude
+        };
+        console.log(eventData);
+        events.push(eventData);
+      
+      // var lat;
+      // var lng;
+      var markers =[];
+
+      for (i = 0; i < events.length; i++) {
+        markers.push(L.marker([parseFloat(events[i].lat), parseFloat(events[i].lng)]));
+      }
+
+      leafletData.getMap().then(function(map){
+      for (i=0; i < events.length; i++) {
+        markers[i].addTo(map);
+      }
+      });
+    }
+  });
+      
+    
 
   // MapService.init($scope);
   // $scope.center = {
