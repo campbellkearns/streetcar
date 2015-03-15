@@ -1,9 +1,10 @@
 'use strict';
 
 angular.module('streetCarApp')
-.controller('MapCtrl', function($scope, $http, leafletData) {
+.controller('MapCtrl', function($scope, $http, leafletData, $stateParams) {
   var i;
   var events = [];
+  
   angular.extend($scope, {
     markers: [],
     center: {
@@ -15,7 +16,7 @@ angular.module('streetCarApp')
       baselayers: {
         mapbox_terrain: {
           name: 'Streetcar Map',
-          url: 'http://api.tiles.mapbox.com/v4/brandonkearns.lc8pkpaa/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiYnJhbmRvbmtlYXJucyIsImEiOiJ2WkJxSncwIn0.GBT4lfAwQoOOLmACb6U7mg',
+          url: 'http://api.tiles.mapbox.com/v4/brandonkearns.lc8pkpaa/{z}/{x}/{y}.png256?access_token=pk.eyJ1IjoiYnJhbmRvbmtlYXJucyIsImEiOiJ2WkJxSncwIn0.GBT4lfAwQoOOLmACb6U7mg',
           type: 'xyz',
           layerOptions: {
             apikey: 'pk.eyJ1IjoiYnJhbmRvbmtlYXJucyIsImEiOiJ2WkJxSncwIn0.GBT4lfAwQoOOLmACb6U7mg',
@@ -37,7 +38,7 @@ angular.module('streetCarApp')
 
   var eventData = [];
 
-  $http.get('api/events/2')
+  $http.get('api/events/' + $stateParams.id)
     .success(function(data) {
       for(i=0; i < data.length; i++) {
         var eventData = {
