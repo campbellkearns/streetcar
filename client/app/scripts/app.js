@@ -74,6 +74,17 @@ angular
          }
         }]        
       })
+      .state('events-show', {
+        url: 'events/:id',
+        templateUrl: 'views/itineraries/show.html',
+        controller: 'ShowItineraryEventsCtrl',
+        onEnter: ['$state', 'AuthService', function($state, AuthService) {
+          console.log('onEnter itineraries show');
+              if (!AuthService.isAuthenticated()) {
+                $state.go('home');
+          }
+        }]        
+      })
 
       .state('login', {
           url: '/login',

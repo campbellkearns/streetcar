@@ -21,11 +21,14 @@ angular.module('streetCarApp')
   $scope.addItinerary = function() {
     var newItinerary = { name: $scope.newItineraryName, 
                          date: $scope.newItineraryDate };
+    var newEvents = $scope.events;
+
     //promise info   
-    ItineraryService.addItinerary(newItinerary)
+    ItineraryService.addItinerary(newItinerary, newEvents)
     .success(function() {
       $scope.newItineraryName = null;
-      getItineraries();
+      $scope.newItineraryDate = null;
+      //getItineraries();
     })
     .error(function(data/*, status*/) {
       console.log(data);
