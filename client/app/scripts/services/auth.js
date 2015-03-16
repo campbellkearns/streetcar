@@ -22,12 +22,6 @@ angular.module('streetCarApp')
 
   that.getSession();
 
-  that.mockUser = {
-    name: 'Mock User',
-    email: 'mock_user@gmail.com',
-    password: 'secret'
-  };
-
   that.register = function(user) {
     console.log('register: user = ' + JSON.stringify(user));
     // return getMockLoginPromise();
