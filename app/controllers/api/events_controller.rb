@@ -24,7 +24,7 @@ class Api::EventsController < ApplicationController
   end
 
   def get_event
-    event = Event.all.sample(1)
+    event = Event.all.sample
     render json: event, status: 200
   end
 
@@ -34,3 +34,9 @@ class Api::EventsController < ApplicationController
     end
 
 end
+
+  # def show
+  #   id = params[:id]
+  #   events = Itinerary.find(id).events
+  #   render json: events, status: 200
+  # end

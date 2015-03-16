@@ -16,7 +16,7 @@
 This is the Events Stuff:
 
   <ul>
-    <li ng-repeat="event in events track by $index" >
+    <li ng-repeat="event in events" >
       <strong>{{ event.name }}</strong> 
       <br>
       {{ event.description }}
@@ -29,8 +29,10 @@ This is the Events Stuff:
       <br>
       {{ event.image_address }}
       <br>
-        <button ng-click="deleteEvent($index)" >Get A New Event</button>
+        <button ng-click="deleteEvent(events.indexOf(event))" >Get A New Event</button>
     </li>
   </ul>
 
 </div>
+
+

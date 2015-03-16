@@ -1,12 +1,10 @@
 'use strict';
 
 angular.module('streetCarApp')
-.controller('ItinerariesCtrl', function($scope, ItineraryService) {
+.controller('ItinerariesCtrl', function($scope, ItineraryService, $state) {
 
   function getItineraries() {
     ItineraryService.getItineraries()
-    // this callback will be called asynchronously
-    // when the response is available
     .success(function(data /*, status, headers, config */) {
       $scope.itineraries = data;
     })

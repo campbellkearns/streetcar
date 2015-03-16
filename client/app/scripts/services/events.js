@@ -8,15 +8,15 @@ angular.module('streetCarApp')
   };
 
   this.getEvent = function() {
-    return $http.get('/api/event/');
+    return $http.get('/api/events/get_event');
   }; 
   
   this.addEvents = function(itinerary, events) {
     return $http.post('/api/itineraries', { itinerary: itinerary , events: events } );
   };
 
-    this.getItineraryEvents = function(id) {
-    return $http.get('/api/event/' + id);
+  this.getItineraryEvents = function(id) {
+    return $http.get('/api/events/' + id);
   };
 
   // this.deleteEvent = function() {
