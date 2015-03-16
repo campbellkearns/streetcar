@@ -35,36 +35,8 @@
   #   ])
 
   events = Event.create([
-  { name: 'World of Coke', description: 'Coke museum', address: '123 Peachtree', phone: '4041234567', 
-    web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 33.762742, longitude: -84.392664, category: 1 },
-  { name: 'GA Aquarium', description: 'big-ass aquarium', address: '234 Peachtree', phone: '4041234567', 
-    web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 33.762625, longitude: -84.394487, category: 1 },
-  { name: 'Rathbuns', description: 'Steak House', address: '345 Peachtree', phone: '4041234567', 
-    web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 33.756172, longitude: -84.364782, category: 2 },
-  { name: 'Sweet Auburn', description: 'Restaurant', address: '456 Peachtree', phone: '4041234567', 
-    web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 33.754307, longitude: -84.379910, category: 2 },
-  { name: 'Maxs Clothes', description: 'clothier', address: '789 Peachtree', phone: '4041234567', 
-    web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 102.2345, longitude: -123.4576, category: 3 },
-  { name: 'Cool Restaurant', description: 'restaurant', address: '789 Peachtree', phone: '4041234567', 
-    web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 102.2345, longitude: -123.4576, category: 4 },
-  { name: 'Some Store', description: 'store', address: '789 Peachtree', phone: '4041234567', 
-    web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 102.2345, longitude: -123.4576, category: 3 },
-  { name: 'Target', description: 'store', address: '789 Peachtree', phone: '4041234567', 
-    web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 102.2345, longitude: -123.4576, category: 1 },
-  { name: 'Ninas Cool Digs', description: 'clothier', address: '789 Peachtree', phone: '4041234567', 
-    web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 102.2345, longitude: -123.4576, category: 3 },
-  { name: 'Lisas Eats', description: 'restaurant', address: '789 Peachtree', phone: '4041234567', 
-    web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 102.2345, longitude: -123.4576, category: 4 },
-  { name: 'Beths Art Store', description: 'art store', address: '789 Peachtree', phone: '4041234567', 
-    web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 102.2345, longitude: -123.4576, category: 3 },
-  { name: 'Franks Burger', description: 'clothier', address: '789 Peachtree', phone: '4041234567', 
-    web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 102.2345, longitude: -123.4576, category: 4 },
-  { name: 'Alans Hotdogs', description: '', address: '789 Peachtree', phone: '4041234567', 
-    web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 102.2345, longitude: -123.4576, category: 3},
-
-  { name: 'Alans Hotdogs', description: '', address: '789 Peachtree', phone: '4041234567', 
-    web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 102.2345, longitude: -123.4576, category: 3},
-
+  { name: 'World of Coke Museum', description: 'Coke museum', address: '121 Baker St. NW Atlanta, GA 30313', phone: '(404) 676-5151', 
+    web_address: 'http://www.worldofcoca-cola.com/', image_address: 'http://www.stonebranch.com/common/images/blog/coke2.jpg', latitude: 33.762742, longitude: -84.392664, category: 1 },
 
   { name: 'Polaris', description: 'Restaurant sits atop the Hyatt Regencys 25 stories. Menu offers Southern  fare and a sampling of great drinks in a retro atmosphere. ', address: '265 Peachtree St NE Atlanta, GA 30303', phone: '4041234567', 
     web_address: 'http://www.hyatt.com/corporate/restaurants/Polaris/en/Polaris.html?src=vanity_polarisatlanta.com', image_address: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0wKs64z0ztCZuh3ZbXhMr_fVGcRjj102z3JqnnKIgpLo3jthd', latitude: 33.761545, longitude: --84.387321, category: 3},
