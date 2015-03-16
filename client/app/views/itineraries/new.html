@@ -1,6 +1,10 @@
 <h1>Itineraries New</h1>
-
 <div ng-controller='GetEventsCtrl'>
+  <div ng-controller='NewMapCtrl'>
+    <leaflet markers="markers" center="center" layers="layers" width="860px" height="960px"></leaflet>
+  </div>
+
+
   <form ng-submit="addEvents()">
     <label>New Itinerary</label>
     <input placeholder="Name"
@@ -33,7 +37,6 @@ This is the Events Stuff:
         <button ng-click="deleteEvent(events.indexOf(event))" >Get A New Event</button>
     </li>
   </ul>
-
 </div>
 
 
