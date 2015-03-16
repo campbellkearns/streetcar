@@ -1,10 +1,13 @@
 <h1>Itineraries Show</h1>
 
-<h3>Name: {{ itinerary.name }}</h3><br>
-<h5>Name: {{ itinerary.date | date:'EEEE, MMMM d, yyyy' }}</h5>
-
-<!-- Events -->
 <div ng-controller='ShowItineraryEventsCtrl'>
+  <h3>Name: {{ itinerary.name }}</h3><br>
+  <h5>Name: {{ itinerary.date | date:'EEEE, MMMM d, yyyy' }}</h5>
+  
+  <div ng-controller='MapCtrl'>
+    <leaflet markers="markers" center="center" layers="layers" width="860px" height="960px"></leaflet>
+  </div>
+<!-- Events -->
   <ul ng-repeat="event in itineraryEvents">
     <li> <strong>{{ event.name }}</strong> </li>
     {{ event.description }}<br>
@@ -12,5 +15,7 @@
     {{ event.phone }}<br>
     {{ event.web_address }}<br>
     {{ event.photo }}<br>
+    {{ event.latitude }}
+    {{ event.longitude }}
   </ul>  
 </div>

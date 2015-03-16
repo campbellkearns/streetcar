@@ -36,13 +36,13 @@
 
   events = Event.create([
   { name: 'World of Coke', description: 'Coke museum', address: '123 Peachtree', phone: '4041234567', 
-    web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 102.2345, longitude: -123.4576, category: 1 },
+    web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 33.762742, longitude: -84.392664, category: 1 },
   { name: 'GA Aquarium', description: 'big-ass aquarium', address: '234 Peachtree', phone: '4041234567', 
-    web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 102.2345, longitude: -123.4576, category: 1 },
+    web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 33.762625, longitude: -84.394487, category: 1 },
   { name: 'Rathbuns', description: 'Steak House', address: '345 Peachtree', phone: '4041234567', 
-    web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 102.2345, longitude: -123.4576, category: 2 },
+    web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 33.756172, longitude: -84.364782, category: 2 },
   { name: 'Sweet Auburn', description: 'Restaurant', address: '456 Peachtree', phone: '4041234567', 
-    web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 102.2345, longitude: -123.4576, category: 2 },
+    web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 33.754307, longitude: -84.379910, category: 2 },
   { name: 'Maxs Clothes', description: 'clothier', address: '789 Peachtree', phone: '4041234567', 
     web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 102.2345, longitude: -123.4576, category: 3 },
   { name: 'Cool Restaurant', description: 'restaurant', address: '789 Peachtree', phone: '4041234567', 

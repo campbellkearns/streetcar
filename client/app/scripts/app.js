@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ui.router',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'leaflet-directive'
   ])
   .config(function ($httpProvider, $stateProvider, $urlRouterProvider) {
     
@@ -30,7 +31,7 @@ angular
       .state('about', {
         url: '/about',
         templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+        controller: 'MapCtrl'
       })
 
       //Itinerary Routes
