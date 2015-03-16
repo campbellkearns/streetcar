@@ -87,7 +87,7 @@ angular.module('streetCarApp')
 
   var eventData = [];
 
-  $http.get('api/events/get_event')
+  $http.get('api/events/')
     .success(function(data) {
       for(i=0; i < data.length; i++) {
         var eventData = {
