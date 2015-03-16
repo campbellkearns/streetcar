@@ -18,15 +18,12 @@ angular.module('streetCarApp')
 
   //GET A SINGLE EVENT
   $scope.getEvent = function() {
-    console.log('THIS IS THE GET_EVENT METHOD');
     return EventService.getEvent()
     .success(function(data) {
       $scope.evnt = data;
-      console.log('getEvent DATA:' + data);
     })
     .error(function(data) {
       console.log(data);
-      //alert('EDIT ERROR: ' + status + ' : ' + JSON.stringify(data));
     });
   };
 
@@ -41,13 +38,12 @@ angular.module('streetCarApp')
       $scope.newItineraryDate = null;
       $state.go('itineraries-show', {id: data.id});
     })
-    .error(function(data/*, status*/) {
+    .error(function(/*data, status*/) {
       alert('PLEASE ENTER ITINERARY NAME AND DATE');
     });
   };
 
   $scope.deleteEvent = function(index) {
-      //console.log('INDEX:' + index);
     EventService.getEvent()
       .success(function(data){
         $scope.events[index] = data;
