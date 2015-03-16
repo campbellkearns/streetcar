@@ -17,11 +17,6 @@ a:hover {
 input {
 	color: #000;
 }
-.header {
-	position: fixed;
-	width:100%;
-	margin-bottom: 20px; 
-}
 .navbar-default {
 	background-color: #868688;
 	border: none;
@@ -265,6 +260,31 @@ and (min-width : 481px) {
 	margin: 1%;
 	border: 1px solid #000;
 	float: left;
+}
+
+#slideout {
+	float: left;
+  top: 40px;
+  left: 0;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+#slideout_inner {
+	float: left;
+  top: 40px;
+  left: -250px;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+#slideout:hover {
+  left: 250px;
+}
+#slideout:hover #slideout_inner {
+  left: 0;
 }
 
 .group-person {
