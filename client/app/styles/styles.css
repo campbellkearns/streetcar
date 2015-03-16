@@ -6,11 +6,48 @@ body {
 	color: #fff;
 }
 h1 { text-align: center;}
+button {	background-color:#ff4964; }
+li { list-style: none;}
+a { color: #fff; }
+a:hover { 
+	color: #97b457;
+	text-decoration: none;
+	padding: 1px;
+}
+input {
+	color: #000;
+}
+.header {
+	position: fixed;
+	width:100%;
+	margin-bottom: 20px; 
+}
+.navbar-default {
+	background-color: #868688;
+	border: none;
+}
+a.navbar-brand {padding: 0 15px;}
+a.navbar-brand img {
+	width: 70px;
+	height: 50px;
+	padding: 0
+}
+.navbar {margin-bottom: 0;}
+.navbar-default .navbar-nav > li > a {
+	color: #e4e4e7;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	color: #fff;
+}
+.container {border: none;}
+h2.ng-binding { margin-top: 0; text-align: center;}
+
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
 and (min-device-width : 320px) {
 
+body {min-height: 750px;}
 
 /*-------------ABOUT----------------*/
 .group-person {
@@ -25,7 +62,7 @@ and (min-device-width : 320px) {
 	height: 90px;
 	margin: 10px 5px;
 	border-radius: 50px;
-	border: 10px solid #97b457;
+	border: 7px solid #97b457;
 }
 
 .group-person div {
@@ -69,7 +106,6 @@ and (min-device-width : 320px) {
 	width: 100%;
 	height: 40px;
 	margin-bottom: 20px;
-	color: #000;
 }
 
 .welcome p {
@@ -80,7 +116,7 @@ and (min-device-width : 320px) {
 .welcome button {
 	margin-top: 20px;
 	height: 55px;
-	background-color:#ff4964;
+
 	color: #fff;
 	font-size: 2em;
 }
@@ -88,13 +124,148 @@ and (min-device-width : 320px) {
 	float: right;
 }
 
-\
+/*-------------ITINERARY----------------*/
+
+.itinerary {
+	width: 100%;
+	height: auto;
+	font-size: 20px;
+}
+ .itinerary li {
+ 	width: 95%;
+ 	margin: 0 auto;
+ 	margin-top: 10px;
+ }
+ .itinerary .itin-name {
+ 	font-size: 20px;
+ 	float: left;
+ }
+ .itinerary .itin-date {
+ 	font-size: 15px;
+ 	float: left;
+ }
+.back {float: right;}
+.itinerary button {
+
+}
 
 }
 
 /* Desktops and laptops ----------- */
 @media only screen
 and (min-width : 481px) {
+
+.main body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  background: url(/images/shi.png) repeat top left;
+}
+
+.main h1 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #2e6e80;
+}
+
+.scroll {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.horizon-sky {
+  z-index: 100;
+  width: 6000px;
+}
+
+.left-right {
+  z-index:1001;
+  width:6000px;
+ /* height:30vw;*/
+}
+
+.city-center {
+  z-index:610;
+  height:41vw;
+}
+
+.museums {
+  z-index:700;
+  height:32vw;
+}
+
+.coke {
+  z-index:725;
+ /* margin-left: -500;*/
+  height:32vw;
+}
+
+.art {
+  z-index:750;
+ /* margin-left: -500;*/
+  height:33vw;
+}
+
+.middle-trolley {
+  z-index: 800;
+  margin-left: -350px;
+  /*margin-right: 550px;*/
+  height: 32.5vw;
+}
+.road {
+  z-index: 740;
+  height:39vw;
+}
+
+.cable {
+  z-index:825;
+  /*margin-top:96;*/
+  height: 33vw;
+}
+
+.stops {
+  z-index: 900;
+  width: 6000px;
+  height: 40vw;
+}
+
+.front-trees {
+  z-index: 950;
+  width: 6000px;
+  height: 0vw;
+}
+
+.text-blocks {
+  z-index: 1000;
+  height: 45vw;
+  width:6000;
+}
+	
+
+.navbar-nav {width: 100%;}
+.navbar-nav > li {
+	width: 20%;
+	text-align: center;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	font-size: 20px;
+	color: #fff;
+	background: url(/images/logo.jpg) no-repeat;
+	background-size: 65% 100%;
+	background-position: center;
+}
+
+/*-------------ITINERARY----------------*/
+  
+.event {
+	width: 48%;
+	height: 200px;
+	margin: 1%;
+	border: 1px solid #000;
+	float: left;
+}
 
 .group-person {
 	width: 48%;

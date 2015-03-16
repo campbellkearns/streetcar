@@ -36,7 +36,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" ui-sref="home">client</a>
+            <!-- <a class="navbar-brand" ui-sref="home"><img src="images/logo.png"></a> -->
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
@@ -48,7 +48,7 @@
               </li>
               <li ng-hide="isAuthenticated()"><a ui-sref="login">Log In</a></li>
               <li ng-hide="isAuthenticated()"><a ui-sref="register">Register</a></li>
-              <li ng-show="isAuthenticated()"><a href="#/">{{ user ? user.email : '' }}</a></li>
+              <li ng-show="isAuthenticated()"><a href="#/">{{ user ? user.name : '' }}</a></li>
               <li ng-show="isAuthenticated()"><a ng-click="logout()">Log Out</a></li>
             </ul>
           </div>
@@ -62,7 +62,11 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+   
+   
+    
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="scripts/services/jquery.jInvertScroll.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>

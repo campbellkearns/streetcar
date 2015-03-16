@@ -1,40 +1,29 @@
-<h1>Itineraries New</h1>
+<h1>Create A New Itinerary</h1>
 
 <div ng-controller='GetEventsCtrl'>
+  <ul>
+    <li class="event" ng-repeat="event in events track by $index" >
+      <h2>{{ event.name }}</h2> 
+      <div>
+        <p>{{ event.description }}</p>
+        <p>{{ event.address }}</p>
+        <p>{{ event.phone }}</p>
+        <a href="{{ event.web_address }}" target=_blank>{{ event.web_address }}</a>
+      </div>
+      <img src="{{ event.image_address }}">
+      <button ng-click="deleteEvent($index)">Get A New Event</button>
+    </li>
+  </ul>
   <form ng-submit="addEvents()">
-    <label>New Itinerary</label>
     <input placeholder="Name"
            ng-model="newItineraryName"
            ng-disabled="saving" autofocus>
+           <br>
     <input placeholder="Date"
            ng-model="newItineraryDate"
            ng-disabled="saving" autofocus
            onaftersave="getItineraries">      
-    <input type="submit" value="Submit">
+    <button type="submit" value="Submit">Create</button>
   </form>
-
-This is the Events Stuff:
-
-  <ul>
-    <li ng-repeat="event in events track by $index" >
-      <strong>{{ event.name }}</strong> 
-      <br>
-      {{ event.description }}
-      <br>
-      {{ event.address }}
-      <br>
-      {{ event.phone }}
-      <br>
-      {{ event.web_address }}
-      <br>
-      {{ event.image_address }}
-      <br>
-        <button ng-click="deleteEvent($index)" >Get A New Event</button>
-    </li>
-  </ul>
 </div>
 
-
-
-
-</div>
