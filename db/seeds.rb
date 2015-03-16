@@ -92,7 +92,7 @@
 
   { name: 'Harolds Chicken and Ice Bar', description: 'Great local chicken wings, burgers and beer bar and restaurant in the Edgewood neighborhood.', address: '349 Edgewood Ave, Atlanta, GA 30312', phone: '(404)577-0001', web_address: 'http://www.haroldschickenatl.com/', image_address: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuni4mkltNJoQBW0A_ZVthgyqhsQ7F03mGLjUeSGOXWR6s1i2CZw', latitude: 33.754211, longitude: -84.376186, category: 3},
 
-  { name: 'Supreme Fish Delight', description: 'Comfort food chain serving fish sandwiches & other casual American fare in a counter-serve space.', address: '362 Auburn Ave NE Atlanta, GA 30312', phone: '(404) 522-5333',web_address: 'supremefishdelight.com', image_address: 'https://s3.grouponcdn.com/images/site_images/1542/7427/IMAGE_Supreme-Fish-Delight.jpg', latitude: 33.755712, longitude: -84.375784, category: 3}
+  { name: 'Supreme Fish Delight', description: 'Comfort food chain serving fish sandwiches & other casual American fare in a counter-serve space.', address: '362 Auburn Ave NE Atlanta, GA 30312', phone: '(404) 522-5333',web_address: 'supremefishdelight.com', image_address: 'https://s3.grouponcdn.com/images/site_images/1542/7427/IMAGE_Supreme-Fish-Delight.jpg', latitude: 33.755712, longitude: -84.375784, category: 3},
 
   { name: 'Grindhouse Killer Burgers', description: 'Creative quick-serve burgers including veggie patties plus fries, beer & liquored-up milkshakes.', address: '209 Edgewood Ave SE, Atlanta, GA 30303', phone: '(404) 522-3444', 
     web_address: 'grindhouseburgers.com', image_address: 'http://aht.seriouseats.com/images/20110607-154769-grindhouse-3box.jpg', latitude: 33.754076, longitude: -84.379967, category: 3},
