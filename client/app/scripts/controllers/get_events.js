@@ -6,8 +6,6 @@ angular.module('streetCarApp')
  //GET RANDOM EVENTS
   function getEvents() {
     EventService.getEvents()
-    // this callback will be called asynchronously
-    // when the response is available
     .success(function(data /*, status, headers, config */) {
       $scope.events = data;
     })
@@ -18,12 +16,15 @@ angular.module('streetCarApp')
 
   getEvents();
 
+  //GET A SINGLE EVENT
   $scope.getEvent = function() {
+    console.log('THIS IS THE GET_EVENT METHOD');
     return EventService.getEvent()
     .success(function(data) {
       $scope.evnt = data;
+      console.log('getEvent DATA:' + data);
     })
-    .error(function(data/*, status*/) {
+    .error(function(data) {
       console.log(data);
       //alert('EDIT ERROR: ' + status + ' : ' + JSON.stringify(data));
     });
@@ -33,13 +34,11 @@ angular.module('streetCarApp')
     var newItinerary = { name: $scope.newItineraryName, 
                          date: $scope.newItineraryDate };
     var newEvents = $scope.events;
-
-    //promise info   
+ 
     EventService.addEvents(newItinerary, newEvents)
     .success(function() {
       $scope.newItineraryName = null;
       $scope.newItineraryDate = null;
-      //getItineraries();
     })
     .error(function(data/*, status*/) {
       console.log(data);
@@ -48,19 +47,10 @@ angular.module('streetCarApp')
   };
 
   $scope.deleteEvent = function(index) {
-    var evt = EventService.getEvent();
-    var events = $scope.events;
-    events.splice(index, 1, evt);
-    $scope.events = events;
-
-    return EventService.deleteEvent(index)
-    .success(function() {
-      //getEvents();
-    })
-    .error(function(data/*, status*/) {
-      console.log(data);
-      //alert('EDIT ERROR: ' + status + ' : ' + JSON.stringify(data));
-    });
+      //console.log('INDEX:' + index);
+    EventService.getEvent()
+      .success(function(data){
+        $scope.events[index] = data;
+      });
   };
-
 });
