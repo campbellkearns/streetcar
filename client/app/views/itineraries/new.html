@@ -1,7 +1,7 @@
 <h1>Itineraries New</h1>
 <div ng-controller='GetEventsCtrl'>
-  <div ng-controller='NewMapCtrl'>
-    <leaflet markers="markers" center="center" layers="layers" width="860px" height="960px"></leaflet>
+  <div ng-controller='NewMapCtrl' width=100% height=100%>
+    <leaflet markers="markers" center="center" layers="layers" width=100% height=100%></leaflet>
   </div>
 
 
@@ -31,7 +31,7 @@ This is the Events Stuff:
       <br>
       {{ event.web_address }}
       <br>
-      {{ event.image_address }}
+      <img src="{{ event.image_address }}">
       <br>
         <button ng-click="deleteEvent(events.indexOf(event))" >Get A New Event</button>
     </li>
