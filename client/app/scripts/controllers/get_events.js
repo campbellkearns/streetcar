@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('streetCarApp')
-.controller('GetEventsCtrl', function($scope, EventService) {
+.controller('GetEventsCtrl', function($scope, EventService, $state) {
 
  //GET RANDOM EVENTS
   function getEvents() {
@@ -36,13 +36,13 @@ angular.module('streetCarApp')
     var newEvents = $scope.events;
  
     EventService.addEvents(newItinerary, newEvents)
-    .success(function() {
+    .success(function(data) {
       $scope.newItineraryName = null;
       $scope.newItineraryDate = null;
+      $state.go('itineraries-show', {id: data.id});
     })
     .error(function(data/*, status*/) {
-      console.log(data);
-      //alert('SAVE ERROR: ' + status + ' : ' + JSON.stringify(data));
+      alert('PLEASE ENTER ITINERARY NAME AND DATE');
     });
   };
 
