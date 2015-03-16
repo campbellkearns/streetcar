@@ -37,7 +37,7 @@ angular
       //Itinerary Routes
       .state('itineraries', {
         url: '/itineraries',
-        templateUrl: 'views/itineraries/new.html',
+        templateUrl: 'views/itineraries/index.html',
         controller: 'ItinerariesCtrl',
         onEnter: ['$state', 'AuthService', function($state, AuthService) {
               if (!AuthService.isAuthenticated()) {
