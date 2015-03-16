@@ -236,7 +236,7 @@ and (min-width : 481px) {
 .front-trees {
   z-index: 950;
   width: 6000px;
-  height: 0vw;
+  height: 31vw;
 }
 
 .text-blocks {
