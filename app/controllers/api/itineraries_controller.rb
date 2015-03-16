@@ -27,7 +27,6 @@ class Api::ItinerariesController < ApplicationController
       itinerary_id = current_user.itineraries.last[:id]
       EventsItinerary.create(itinerary_id: itinerary_id, event_id: event["id"])
     end
-    #redirect_to api_itinerary_path(itinerary_id)
     render json: itinerary, status: 201 # , location: [:api, itineraries]
   end
 

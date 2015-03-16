@@ -38,7 +38,6 @@
   { name: 'World of Coke', description: 'Coke museum', address: '121 Baker St NW Atlanta, GA 30313', phone: '(404) 676-5151', 
     web_address: 'http://www.worldofcoca-cola.com/', image_address: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSH00NmV_MA2Mwauhhvo0H3l08YZl8wP3PhlCXPAO97z7LUDl4b', latitude: 33.762742, longitude: -84.392664, category: 1 }
 
-
   { name: 'Auburn Spring Festival', description:'Spring festival in Historic Sweet Auburn district 5/8/2015 - 5/10/2015.',address:'240 Auburn Avenue Atlanta, GA 30303', phone:'404-681-4667', web_address:'', image_address:'', latitude:33.762742, longitude:-84.392664, category: 1},
 
   { name: 'Teds Montana Grill', description: 'Tradional American burgers with amazing butter chip pickles brought to the table.', address: '133 Luckie St  NW Atlanta, GA 30303', phone: '(404)521-9796', web_address: 'http://www.tedsmontanagrill.com/', image_address: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbA32226kB7IiS1H4M8dbj3q17Z8-IE0e94GSruM6PWKFic1la', latitude: 33.7586402, longitude: -84.390548, category: 3},

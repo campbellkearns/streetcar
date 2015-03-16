@@ -6,7 +6,14 @@ class Event < ActiveRecord::Base
   validates :longitude, numericality: true, presence: true
 
   def self.seed_itinerary_with_events()
-    Event.all.sample(6)
+    events = []
+    events << Event.where(category:1).sample
+    events << Event.where(category:2).sample
+    events << Event.where(category:3).sample
+    3.times do 
+      events << Event.where(category:4).sample
+    end
+    return events
   end
 
 end

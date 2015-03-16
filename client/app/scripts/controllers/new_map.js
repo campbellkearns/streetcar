@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('streetCarApp')
-.controller('MapCtrl', function($scope, $http, leafletData, $stateParams) {
+.controller('NewMapCtrl', function($scope, $http, leafletData, $stateParams) {
   var i;
   var events = [];
 
@@ -87,7 +87,7 @@ angular.module('streetCarApp')
 
   var eventData = [];
 
-  $http.get('api/events/' + $stateParams.id)
+  $http.get('api/events/')
     .success(function(data) {
       for(i=0; i < data.length; i++) {
         var eventData = {
