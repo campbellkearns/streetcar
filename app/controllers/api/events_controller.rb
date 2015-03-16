@@ -1,12 +1,11 @@
 class Api::EventsController < ApplicationController
 
   def index
-    events = Event.seed_itinerary_with_events()  
+    events = Event.seed_itinerary_with_events() 
     render json: events, status: 200
   end
 
   def show
-    #@events = current_user.itineraries.events
     @events = current_user.itineraries.find(params[:id]).events
     render json: @events
   end
@@ -34,9 +33,3 @@ class Api::EventsController < ApplicationController
     end
 
 end
-
-  # def show
-  #   id = params[:id]
-  #   events = Itinerary.find(id).events
-  #   render json: events, status: 200
-  # end

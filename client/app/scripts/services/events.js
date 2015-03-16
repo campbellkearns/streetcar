@@ -18,9 +18,5 @@ angular.module('streetCarApp')
   this.getItineraryEvents = function(id) {
     return $http.get('/api/events/' + id);
   };
-
-  // this.deleteEvent = function() {
-  //   return $http.get('/api/events/get_event');
-  // };
-
+  
 });
