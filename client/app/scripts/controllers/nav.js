@@ -45,7 +45,7 @@ angular.module('streetCarApp')
   $rootScope.$on('auth:new-registration', function(event, user) {
     // console.log('caught event auth:new-registration with user = ' + JSON.stringify(user));
     $scope.user = user;
-    $state.go('itineraries');
+    $state.go('itineraries-new');
   });
 
   $rootScope.$on('auth:login', function(event, user) {
