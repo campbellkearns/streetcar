@@ -2,7 +2,7 @@
 
 <div ng-controller='GetEventsCtrl'>
   <ul>
-    <li class="event" ng-repeat="event in events track by $index" >
+    <li class="event" ng-repeat="event in events" >
       <h2>{{ event.name }}</h2> 
       <div>
         <p>{{ event.description }}</p>
@@ -11,9 +11,14 @@
         <a href="{{ event.web_address }}" target=_blank>{{ event.web_address }}</a>
       </div>
       <img src="{{ event.image_address }}">
-      <button ng-click="deleteEvent($index)">Get A New Event</button>
+      <button ng-click="deleteEvent(events.indexOf(event))">Get A New Event</button>
     </li>
   </ul>
+  <div ng-controller='NewMapCtrl' width=100% height=100%>
+    <leaflet markers="markers" center="center" layers="layers" width=100% height=100%></leaflet>
+  </div>
+
+
   <form ng-submit="addEvents()">
     <input placeholder="Name"
            ng-model="newItineraryName"
@@ -25,5 +30,7 @@
            onaftersave="getItineraries">      
     <button type="submit" value="Submit">Create</button>
   </form>
+
 </div>
+
 
