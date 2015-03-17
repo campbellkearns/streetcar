@@ -1,21 +1,25 @@
 <h1>Itineraries Show</h1>
 
-<div ng-controller='ShowItineraryEventsCtrl'>
-  <h3>Name: {{ itinerary.name }}</h3><br>
-  <h5>Name: {{ itinerary.date | date:'EEEE, MMMM d, yyyy' }}</h5>
+<div ng-controller='ShowItineraryEventsCtrl' class="mapping">
+  <h3>{{ itinerary.name }}</h3>
+  <h5>{{ itinerary.date | date:'EEEE, MMMM d, yyyy' }}</h5>
   
   <div ng-controller='MapCtrl'>
-    <leaflet markers="markers" center="center" layers="layers" width="860px" height="960px"></leaflet>
+    <leaflet markers="markers" center="center" layers="layers" width="1170px" height="650px" class="map"></leaflet>
   </div>
 <!-- Events -->
-  <ul ng-repeat="event in itineraryEvents">
-    <li> <strong>{{ event.name }}</strong> </li>
-    {{ event.description }}<br>
-    {{ event.address }}<br>
-    {{ event.phone }}<br>
-    {{ event.web_address }}<br>
-    {{ event.photo }}<br>
-    {{ event.latitude }}
-    {{ event.longitude }}
+  <ul >
+    <li ng-repeat="event in itineraryEvents" class="event"> 
+      <img src="{{ event.image_address }}">
+      <div class="description">
+        <div>
+          <h2>{{ event.name }}</h2> 
+          <p>{{ event.description }}</p>
+          <p class="contacting">{{ event.address }}</p>
+          <p>{{ event.phone }}</p>
+          <a href="{{ event.web_address }}" target=_blank>Website</a>
+        </div>
+      </div>
+    </li>
   </ul>  
 </div>

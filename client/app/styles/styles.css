@@ -1,0 +1,399 @@
+body {
+	margin: 0 auto;
+	background: -webkit-linear-gradient(#65a0b2, #5c5c82) no-repeat;
+	background-size: 100% 100%;
+	height: auto;
+	color: #fff;
+}
+h1 { text-align: center;}
+button {	background-color:#ff4964; }
+li { list-style: none;}
+a { color: #fff; }
+a:hover { 
+	color: #97b457;
+	text-decoration: none;
+}
+p {
+	text-align: justify;
+	margin: 0 10px;
+}
+input {
+	color: #000;
+}
+.header {
+	position: fixed;
+	width: 100%;
+	z-index: 10000;
+	border-bottom: none;
+}
+.header .container {padding: 0;}
+.navbar-default {
+	background-color: #868688;
+	border: none;
+}
+a.navbar-brand {padding: 0 15px;}
+a.navbar-brand img {
+	width: 70px;
+	height: 50px;
+	padding: 0
+}
+.navbar {margin-bottom: 0;}
+.navbar-default .navbar-nav > li > a {
+	color: #e4e4e7;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	color: #fff;
+}
+.container {border: none; padding: 60px 0 100px 0;}
+h2.ng-binding { margin-top: 0; text-align: center;}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px) {
+
+body {min-height: 750px;}
+.mobile-logo {
+	display: block;
+	float: left;
+	font-size: 35px;
+	padding-left: 103px;
+}
+
+/*-------------ABOUT----------------*/
+.group-person {
+	width: 95%;
+	height: 150px;
+	margin: 0 auto 5px auto;
+}
+
+.group-person img	{
+	float: left;
+	width: 90px;
+	height: 90px;
+	margin: 10px 5px;
+	border-radius: 50px;
+	border: 7px solid #97b457;
+}
+
+.group-person div {
+	float: left;
+	margin: 0 5px;
+	width: 64%;
+	height: 150px;
+}
+
+
+.group-person h3 {margin: 5px 0 0 0 ; text-align: center;}
+.group-person ul {	padding: 0; margin-bottom: 5px; text-align: center}
+.group-person ul li {
+	list-style: none;
+	display: inline;
+}
+.group-person ul li a { color: #97b457; text-decoration: none; font-size: 12px;}
+.group-person p {margin: 0; font-size: 12px;}
+
+/*--------------LOG IN------------*/
+
+.welcome {
+	width: 80%;
+	height: auto;
+	background-color: #7c7d7d;
+	padding: 20px;
+	margin: 30px auto;
+}
+.welcome h1	{
+	font-size: 30px;
+	color: #fff;
+	margin: 0 0 20px 0; 
+}
+
+.welcome form {
+	width: 85%;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+.welcome input {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+}
+
+.welcome p {
+	margin: 0;
+	font-size: 20px;
+}
+
+.welcome button {
+	margin-top: 20px;
+	height: 55px;
+
+	color: #fff;
+	font-size: 2em;
+}
+.welcome a {
+	float: right;
+}
+
+/*-------------ITINERARY----------------*/
+
+.itinerary {
+	width: 100%;
+	height: auto;
+	font-size: 20px;
+}
+ .itinerary li {
+ 	width: 95%;
+ 	margin: 0 auto;
+ 	margin-top: 10px;
+ }
+ .itinerary .itin-name {
+ 	font-size: 20px;
+ 	float: left;
+ }
+ .itinerary .itin-date {
+ 	font-size: 15px;
+ 	float: left;
+ }
+.back {float: right;}
+
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 481px) {
+
+.container {max-width: 1200px;}
+
+.mobile-logo {display: none;}
+.main body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  background: url(/images/shi.png) repeat top left;
+}
+
+.main h1 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #2e6e80;
+}
+
+.scroll {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.left-right {
+  z-index:1001;
+  width:6000px;
+ /* height:30vw;*/
+}
+
+.city-center {
+  z-index:610;
+  height:41vw;
+}
+
+.museums {
+  z-index:700;
+  height:32vw;
+}
+
+.coke {
+  z-index:725;
+ /* margin-left: -500;*/
+  height:32vw;
+}
+
+.art {
+  z-index:750;
+ /* margin-left: -500;*/
+  height:33vw;
+}
+
+.middle-trolley {
+  z-index: 800;
+  margin-left: -350px;
+  /*margin-right: 550px;*/
+  height: 32.5vw;
+}
+.road {
+  z-index: 740;
+  height:39vw;
+}
+
+.cable {
+  z-index:825;
+  /*margin-top:96;*/
+  height: 33vw;
+}
+
+.stops {
+  z-index: 900;
+  width: 6000px;
+  height: 40vw;
+}
+
+.front-trees {
+  z-index: 950;
+  width: 6000px;
+  height: 31vw;
+}
+
+.text-blocks {
+  z-index: 1000;
+  height: 45vw;
+  width:6000;
+}
+	
+
+.navbar-nav {width: 100%;}
+.navbar-nav > li {
+	width: 20%;
+	text-align: center;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	font-size: 20px;
+	color: #fff;
+	background: url(/images/logo.jpg) no-repeat;
+	background-size: 65% 100%;
+	background-position: center;
+}
+
+/*-------------ITINERARY----------------*/
+  
+.event {
+	position: relative;
+  overflow: hidden;
+	float: left;
+	width: 350px;
+	height: 350px;
+	margin: 1%;
+}
+
+.event img {
+	width: 350px;
+	height: 350px;
+  padding: 0;
+}
+
+.event > div {
+	background-color: rgba(0,0,0,0.75);
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    left: 0;
+    -webkit-transition: opacity .5s linear;
+    text-shadow: #000 1px 1px 0;
+    color: #ccc;
+}
+
+.event:hover > div {
+    display: block;
+    bottom: 0px;
+    -webkit-transition: opacity .5s linear;
+    opacity: 1.0;
+}
+.event .contacting {
+	margin-top: 40px;
+}
+.event h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.event p {
+    font-size: 15px;
+}
+.event a {
+    margin: 3%;
+}
+.event button 	{
+	position: absolute;
+	bottom: 10px;
+	left: 110px;
+}
+
+.create-itin form	{
+	margin-left: 50px;
+}
+.create-itin form input {
+		width: 250px;
+		margin-right: 10px;
+}
+.mapping ul {
+	width: 50%;
+}
+.mapping h3, .mapping h5 {
+	text-align: center;
+}
+
+.map {
+	position: absolute;
+	z-index: -1;
+}
+
+.mapping .event {
+	position: relative;
+  overflow: hidden;
+	width: 200px;
+	height: 200px;
+	margin: 1%;
+	z-index: 5;
+}
+
+.mapping .event img {
+	width: 200px;
+	height: 200px;
+  padding: 0;
+}
+
+.mapping .event .contacting {
+	margin-top: 10px;
+}
+.mapping .event h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.mapping .event p {
+    font-size: 12px;
+}
+.mapping .event a {
+    margin: 3%;
+}
+
+.about { margin-bottom: 20px;}
+.group-person {
+	width: 48%;
+	height: 325px;
+	margin: 1%;
+	float: left;
+	border: solid 1px #97b457;
+}
+
+.group-person img	{
+	float: none;
+	width: 150px;
+	height: 150px;
+	margin: 5% 25%;
+	border-radius: 150px;
+}
+.group-person div {
+	float: left;
+	margin: 0 auto;
+	width: 95%;
+	height: 150px;
+}
+.group-person section {
+	width: 100%;
+	height: 150px;
+	margin: 0 auto;
+}
+.group-person .group-person-description {width: 100%; margin: 0 auto; padding-left: 10px;}
+
+}

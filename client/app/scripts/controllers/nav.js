@@ -7,9 +7,9 @@ angular.module('streetCarApp')
   console.log('NavCtrl is alive!');
 
   $scope.tabs = [
-    { state: 'home',        label: 'Home',         active: true,  isPublic: true  },
-    { state: 'itineraries', label: 'Itineraries',  active: false, isPublic: false },
+    { state: 'itineraries-new', label: 'Itineraries',  active: false, isPublic: false },
     { state: 'about',       label: 'About',        active: false, isPublic: true  },
+    { state: 'home',        label: 'Trolley Hop',         active: true,  isPublic: true  },
   ];
 
   $scope.getTabClass = function(tab) {
