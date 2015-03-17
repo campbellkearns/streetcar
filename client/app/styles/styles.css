@@ -14,6 +14,10 @@ a:hover {
 	text-decoration: none;
 	padding: 1px;
 }
+p {
+	text-align: justify;
+	margin: 0 10px;
+}
 input {
 	color: #000;
 }
@@ -21,7 +25,9 @@ input {
 	position: fixed;
 	width: 100%;
 	z-index: 10000;
+	border-bottom: none;
 }
+.header .container {padding: 0;}
 .navbar-default {
 	background-color: #868688;
 	border: none;
@@ -39,7 +45,7 @@ a.navbar-brand img {
 .navbar-default .navbar-nav > li > a:hover {
 	color: #fff;
 }
-.container {border: none;}
+.container {border: none; padding: 60px 0 100px 0;}
 h2.ng-binding { margin-top: 0; text-align: center;}
 
 
@@ -48,6 +54,12 @@ h2.ng-binding { margin-top: 0; text-align: center;}
 and (min-device-width : 320px) {
 
 body {min-height: 750px;}
+.mobile-logo {
+	display: block;
+	float: left;
+	font-size: 35px;
+	padding-left: 103px;
+}
 
 /*-------------ABOUT----------------*/
 .group-person {
@@ -155,6 +167,9 @@ body {min-height: 750px;}
 @media only screen
 and (min-width : 481px) {
 
+.container {max-width: 1200px;}
+
+.mobile-logo {display: none;}
 .main body {
   padding: 0;
   margin: 0;
@@ -173,13 +188,6 @@ and (min-width : 481px) {
   position: fixed;
   bottom: 0;
   left: 0;
-}
-
-.horizon-sky {
-  z-index: 100;
-  height: 200px;
-  width: 6000px;
-  bottom:0;
 }
 
 .left-right {
@@ -262,38 +270,66 @@ and (min-width : 481px) {
 /*-------------ITINERARY----------------*/
   
 .event {
-	width: 48%;
-	height: 200px;
+	position: relative;
+  overflow: hidden;
+	float: left;
+	width: 350px;
+	height: 350px;
 	margin: 1%;
-	border: 1px solid #000;
-	float: left;
 }
 
-#slideout {
-	float: left;
-  top: 40px;
-  left: 0;
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-#slideout_inner {
-	float: left;
-  top: 40px;
-  left: -250px;
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-#slideout:hover {
-  left: 250px;
-}
-#slideout:hover #slideout_inner {
-  left: 0;
+.event img {
+	width: 350px;
+	height: 350px;
+    padding: 0;
 }
 
+.event > div {
+	background-color: rgba(0,0,0,0.75);
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    left: 0;
+    -webkit-transition: opacity .5s linear;
+    text-shadow: #000 1px 1px 0;
+    color: #ccc;
+}
+
+.event:hover > div {
+    display: block;
+    bottom: 0px;
+    -webkit-transition: opacity .5s linear;
+    opacity: 1.0;
+}
+.event .contacting {
+	margin-top: 40px;
+}
+.event h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.event p {
+    font-size: 15px;
+}
+.event a {
+    margin: 3%;
+}
+.event button 	{
+	position: absolute;
+	bottom: 10px;
+	left: 110px;
+}
+
+.create-itin form	{
+	margin-left: 50px;
+}
+.create-itin form input {
+		width: 250px;
+		margin-right: 10px;
+}
+.about { margin-bottom: 20px;}
 .group-person {
 	width: 48%;
 	height: 325px;
@@ -303,12 +339,11 @@ and (min-width : 481px) {
 }
 
 .group-person img	{
-	float: left;
+	float: none;
 	width: 150px;
 	height: 150px;
-	margin: 5%;
+	margin: 5% 25%;
 	border-radius: 150px;
-	border: 7px solid #97b457;
 }
 .group-person div {
 	float: left;
