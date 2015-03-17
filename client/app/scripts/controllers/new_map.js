@@ -83,6 +83,7 @@ angular.module('streetCarApp')
     L.geoJson(route, {
       style: routeStyle 
     }).addTo(map);
+    map.scrollWheelZoom.disable();
   });
 
   var eventData = [];
@@ -101,12 +102,16 @@ angular.module('streetCarApp')
       var markers =[];
 
       for (i = 0; i < events.length; i++) {
-        markers.push(L.marker([parseFloat(events[i].lat), parseFloat(events[i].lng)]));
+        markers.push(L.marker([parseFloat(events[i].lat), 
+                               parseFloat(events[i].lng)], { 
+                               title: events[i].name, 
+                               opacity: 0.89}));
       }
 
       leafletData.getMap().then(function(map){
       for (i=0; i < events.length; i++) {
-        markers[i].addTo(map);
+        markers[i].addTo(map)
+        .bindPopup(events[i].name);
       }
       });
     }
