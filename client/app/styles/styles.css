@@ -12,7 +12,6 @@ a { color: #fff; }
 a:hover { 
 	color: #97b457;
 	text-decoration: none;
-	padding: 1px;
 }
 p {
 	text-align: justify;
@@ -157,9 +156,7 @@ body {min-height: 750px;}
  	float: left;
  }
 .back {float: right;}
-.itinerary button {
 
-}
 
 }
 
@@ -281,7 +278,7 @@ and (min-width : 481px) {
 .event img {
 	width: 350px;
 	height: 350px;
-    padding: 0;
+  padding: 0;
 }
 
 .event > div {
@@ -329,6 +326,47 @@ and (min-width : 481px) {
 		width: 250px;
 		margin-right: 10px;
 }
+.mapping ul {
+	width: 50%;
+}
+.mapping h3, .mapping h5 {
+	text-align: center;
+}
+
+.map {
+	position: absolute;
+	z-index: -1;
+}
+
+.mapping .event {
+	position: relative;
+  overflow: hidden;
+	width: 200px;
+	height: 200px;
+	margin: 1%;
+	z-index: 5;
+}
+
+.mapping .event img {
+	width: 200px;
+	height: 200px;
+  padding: 0;
+}
+
+.mapping .event .contacting {
+	margin-top: 10px;
+}
+.mapping .event h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.mapping .event p {
+    font-size: 12px;
+}
+.mapping .event a {
+    margin: 3%;
+}
+
 .about { margin-bottom: 20px;}
 .group-person {
 	width: 48%;
