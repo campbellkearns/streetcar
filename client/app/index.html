@@ -15,6 +15,7 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <!-- endbuild -->
   </head>
   <body ng-app="streetCarApp" ng-cloak>
@@ -29,13 +30,14 @@
            ng-controller="NavCtrl">
         <div class="container">
           <div class="navbar-header">
+            <span class="mobile-logo">TrolleyHop</span>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" ui-sref="home">client</a>
+            <!-- <a class="navbar-brand" ui-sref="home"><img src="images/logo.png"></a> -->
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
@@ -47,7 +49,7 @@
               </li>
               <li ng-hide="isAuthenticated()"><a ui-sref="login">Log In</a></li>
               <li ng-hide="isAuthenticated()"><a ui-sref="register">Register</a></li>
-              <li ng-show="isAuthenticated()"><a href="#/">{{ user ? user.email : '' }}</a></li>
+              <li ng-show="isAuthenticated()"><a href="#/itineraries">{{ user ? user.name : '' }}</a></li>
               <li ng-show="isAuthenticated()"><a ng-click="logout()">Log Out</a></li>
             </ul>
           </div>
@@ -88,6 +90,7 @@
         <script src="scripts/controllers/nav.js"></script>
         <script src="scripts/controllers/auth.js"></script>
         <script src="scripts/services/auth.js"></script>
+        <script src="scripts/services/jquery.jInvertScroll.js"></script>
         <script src="scripts/services/itinerary.js"></script>
         <script src="scripts/services/map.js"></script>
         <script src="scripts/services/jquery.jInvertScroll.js"></script>

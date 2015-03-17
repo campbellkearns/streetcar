@@ -1,8 +1,10 @@
-<form ng-submit="register()" class="well">
-  <h3>Sign up!</h3>
-  <input ng-model="user.name" type="text" placeholder="Name">
-  <input ng-model="user.email" type="text" placeholder="Email">
-  <input ng-model="user.password" type="password" placeholder="Password">
-  <input ng-model="user.password_confirmation" type="password" placeholder="Password confirmation">
-  <button type="submit" class="btn">Sign up</button>
-</form>
+<section class="welcome">
+	<form ng-submit="register()">
+	  <h3>Sign Up</h3>
+	  <input ng-model="user.name" type="text" placeholder="Name">
+	  <input ng-model="user.email" type="text" placeholder="Email">
+	  <input ng-model="user.password" type="password" placeholder="Password">
+	  <input ng-model="user.password_confirmation" type="password" placeholder="Password confirmation">
+	  <button type="submit" class="btn">Sign up</button>
+	</form>
+</section>
