@@ -6,7 +6,7 @@ gem 'rails-api'
 gem 'spring', :group => :development
 gem 'pg'
 gem 'responders', '~> 2.0'
-
+gem 'rails_12factor', group: :production
 # To use ActiveModel has_secure_password
 gem 'rack-cors', :require => 'rack/cors'
 gem 'bcrypt', '~> 3.1.7'
