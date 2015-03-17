@@ -80,6 +80,11 @@ angular.module('streetCarApp')
   };
 
   leafletData.getMap().then(function(map) {
+    map.scrollWheelZoom.disable();
+  });
+
+
+  leafletData.getMap().then(function(map) {
     L.geoJson(route, {
       style: routeStyle 
     }).addTo(map);

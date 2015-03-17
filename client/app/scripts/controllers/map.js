@@ -79,6 +79,12 @@ angular.module('streetCarApp')
     'opacity' : 0.65
   };
 
+
+  leafletData.getMap().then(function(map) {
+    map.scrollWheelZoom.disable();
+  });
+
+
   leafletData.getMap().then(function(map) {
     L.geoJson(route, {
       style: routeStyle 
