@@ -26,8 +26,8 @@ Trello: <https://trello.com/b/2rf8m6Ii/trolley-app>
 * Authentication & Authorization from scratch using b-crypt-ruby
 
 #####Process Documents:
-[ER Diagram]([Imgur](http://i.imgur.com/a2xzqcE.jpg)) <br>
-[Site Map]([Imgur](http://i.imgur.com/eodigg9.jpg))
+[ER Diagram][Imgur](http://i.imgur.com/a2xzqcE.jpg)  <br>
+[Site Map][Imgur](http://i.imgur.com/eodigg9.jpg)
 #####Wireframes:
 
 
