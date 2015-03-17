@@ -29,8 +29,14 @@ Trello: <https://trello.com/b/2rf8m6Ii/trolley-app>
 [ER Diagram][Imgur](http://i.imgur.com/a2xzqcE.jpg)  <br>
 [Site Map][Imgur](http://i.imgur.com/eodigg9.jpg)
 #####Wireframes:
+[All Wireframes](http://imgur.com/a/7kjRN/all)
+
+#####Installation:
+* Github: download project from Github
+* Grunt Install: once the project files are downloaded, user should enter the "client" and install grunt (run "grunt" from the command line)
+* Install Rails Databases: from the main folder, User should run 'rake db:create db:migrate' to set up required database. User can run 'rake db:seed' to upload Event data if they choose.
+* Fire Up Local Servers: to run local servers, User should:
+	* Turn on Grunt Server: in 'client' folder, run 'grunt serve' from terminal
+	* Turn on Rails Server: in main project file, run 'rails s' from terminal  
 
 
-#####Build & Development:
-
-Run `grunt` for building and `grunt serve` for preview.
