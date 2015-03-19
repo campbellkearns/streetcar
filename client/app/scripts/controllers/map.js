@@ -9,9 +9,9 @@ angular.module('streetCarApp')
   angular.extend($scope, {
     markers: [],
     center: {
-      lat: 33.771,
+      lat: 33.77,
       lng: -84.414,
-      zoom: 13
+      zoom: 14
     },
     layers: {
       baselayers: {
@@ -74,8 +74,8 @@ angular.module('streetCarApp')
   };
 
   var routeStyle = {
-    'color'   : '#ff7800',
-    'weight'  : 5,
+    'color'   : '#ff4964',
+    'weight'  : 7,
     'opacity' : 0.65
   };
 
