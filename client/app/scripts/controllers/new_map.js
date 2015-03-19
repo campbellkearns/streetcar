@@ -74,8 +74,8 @@ angular.module('streetCarApp')
   };
 
   var routeStyle = {
-    'color'   : '#ff7800',
-    'weight'  : 5,
+    'color'   : '#ff4964',
+    'weight'  : 7,
     'opacity' : 0.65
   };
 
