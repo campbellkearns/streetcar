@@ -96,5 +96,5 @@ angular
           templateUrl: 'views/register.html',
           controller: 'AuthCtrl'
       });
-      $urlRouterProvider.otherwise('/');
+      $urlRouterProvider.otherwise('home');
   });
