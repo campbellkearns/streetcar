@@ -40,14 +40,14 @@
 
   { name: 'Auburn Spring Festival', description:'Spring festival in Historic Sweet Auburn district 5/8/2015 - 5/10/2015.',address:'240 Auburn Avenue Atlanta, GA 30303', phone:'404-681-4667', web_address:'', image_address:'', latitude:33.762742, longitude:-84.392664, category: 1},
 
-  { name: 'Teds Montana Grill', description: 'Tradional American burgers with amazing butter chip pickles brought to the table.', address: '133 Luckie St  NW Atlanta, GA 30303', phone: '(404)521-9796', web_address: 'http://www.tedsmontanagrill.com/', image_address: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbA32226kB7IiS1H4M8dbj3q17Z8-IE0e94GSruM6PWKFic1la', latitude: 33.7586402, longitude: -84.390548, category: 3},
+  { name: "Ted's Montana Grill", description: 'Traditional American burgers with amazing butter chip pickles brought to the table.', address: '133 Luckie St  NW Atlanta, GA 30303', phone: '(404)521-9796', web_address: 'http://www.tedsmontanagrill.com/', image_address: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbA32226kB7IiS1H4M8dbj3q17Z8-IE0e94GSruM6PWKFic1la', latitude: 33.7586402, longitude: -84.390548, category: 3},
 
   { name: 'Jalapeno Charlies', description: 'Mexican and Latin American menu.', address: '234 Peachtree', phone: '(404)581-0884', 
     web_address: 'http://www.jalapenocharlies.com/', image_address: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbvbJSNSe-Dw0hjuCo6NSKQlbJlB7WVgwl2_iyG4DdgjqY1axuSQ', latitude: 33.759895, longitude: -84.387770, category: 3 },
 
-  { name: 'GA Aquarium', description: 'big-ass aquarium and lots of fish. Yeah and some screaming kids, but its awesome!', address: '225 Baker Street NW Atlanta, GA 30313', phone: '4041234567', web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 33.763382, longitude: -84.395110, category: 2 },
+  { name: 'Georgia Aquarium', description: 'big-ass aquarium and lots of fish. Yeah and some screaming kids, but its awesome!', address: '225 Baker Street NW Atlanta, GA 30313', phone: '4041234567', web_address: 'wwww.abc.com', image_address: 'wwww.123.com', latitude: 33.763382, longitude: -84.395110, category: 2 },
   
-  { name: 'Rathbuns', description: 'The Marqui Hotels signature restaurant with fine steaks, seafood and a great wine list.', address: '265 Peachtree Centre Ave Atlanta, GA 30303', phone: '(404)586-6134', 
+  { name: "Rathbun's", description: 'The Marqui Hotels signature restaurant with fine steaks, seafood and a great wine list.', address: '265 Peachtree Centre Ave Atlanta, GA 30303', phone: '(404)586-6134', 
     web_address: 'http://www.searatlanta.com/', image_address: 'wwww.123.com', latitude: 33.756172, longitude: -84.364782, category: 3 },
 
   { name: 'High Velocity', description: 'The Marqui Hotels sports bar restaurant ideal for parties and grabbing a meal with friends.', address: '265 Peachtree Centre Ave Atlanta, GA 30303', phone: '(404)521-0000', 
@@ -66,20 +66,20 @@
   
   { name: 'Atlanta Grill at the Ritz', description: 'A steakhouse in a club house setting, with stiff drinks and top notch culinary selections for the discriminating tastebuds.', address: '181 Peachtree St NE Atlanta,GA 30303', phone: '(404)659-0400', web_address: 'http://www.ritzcarlton.com/en/Properties/Atlanta/Dining/AtlantaGrill/Default.htm', image_address: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRycM1oKsuf9X0DS_LmHbCndcjI3hgXiZVpVENN0eSo_YSc94d3', latitude: 33.758545, longitude: -84.386960, category: 3 },
   
-  { name: 'Sweet Georgias Juke Joint', description: 'Old time Southern foods mixed with an easy mix of live music.', address: '200 Peachtree st, suite #L05 Atlanta, GA 30303', phone: '(404)230-5853', web_address: 'http://www.sweetgeorgiasjukejoint.com/', image_address: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSOIx9vMryeQDXYGF_c0KpVSFSrfdnI20Mi8A-rOYjXPD7Teft', latitude: 33.759029, longitude: 33.759029, category: 3 },
+  { name: "Sweet Georgia's Juke Joint", description: 'Old time Southern foods mixed with an easy mix of live music.', address: '200 Peachtree st, suite #L05 Atlanta, GA 30303', phone: '(404)230-5853', web_address: 'http://www.sweetgeorgiasjukejoint.com/', image_address: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSOIx9vMryeQDXYGF_c0KpVSFSrfdnI20Mi8A-rOYjXPD7Teft', latitude: 33.759029, longitude: 33.759029, category: 3 },
   
   { name: 'Rise Sushi Lounge', description: 'Grade A sushi and Asian tapas.', address: '300 Marietta St Atlanta, GA 30313', phone: '(404)4770947', web_address: 'http://risesushilounge.com/', image_address: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZg_Z6O4Ts2qjiU30Ut7QIHVeGP5nVHW9dv4txEqkh-aNfb2f8', latitude: 33.761880, longitude: -84.396738, category: 3 },
   
   { name: 'No Mas Cantina', description: 'Mexican cuisine serving up the best  that from Mexico.', address: '180 Walker St NW Atlanta, GA 30303', phone: '(404)574-5678', web_address: 'http://nomasatlanta.com/', image_address: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKX252d6n-hTENqK8z3qTJL89JvxXEDywvClTOWeTX0pr_m1Yo', latitude: 33.749801, longitude: -84.400936, category: 3 },
   
-  { name: 'Kwans Deli and Korean Kitchen', description: 'Korean fusioned Asian style menu served in the Centennial Park are for over 10 years.', address: '267 Marietta St NW Atlanta, GA 30313', phone: '4041234567', web_address: 'http://kwansdeli.com/', image_address: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFReuVnPQjM6WBao1S3SkQ3_nNwRf08VppyiOAguoSBEHZDon6Yg', latitude: 33.760593, longitude: -84.395035, category: 3 },
+  { name: "Kwan's Deli and Korean Kitchen", description: 'Korean fusioned Asian style menu served in the Centennial Park are for over 10 years.', address: '267 Marietta St NW Atlanta, GA 30313', phone: '4041234567', web_address: 'http://kwansdeli.com/', image_address: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFReuVnPQjM6WBao1S3SkQ3_nNwRf08VppyiOAguoSBEHZDon6Yg', latitude: 33.760593, longitude: -84.395035, category: 3 },
   
   { name: 'Joystick Gamebar', description: 'A bar and rold-time-retro arcade game room combined to help release some stress and to enjoy the locals. ', address: '427 Edgewood Ave, Atlanta, GA 30312', phone: '(404)525-3002', web_address: 'http://www.joystickgamebar.com/', image_address: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa6sI_qQaAVmmREe3rHuI0UXa0p717Y1bswoaknMT8XA-YmSUbZQ', latitude: 33.754528, longitude: -84.372461, category: 3 },
   
   { name: 'Sock Fancy', description: 'Name says it all.', address: '171 Auburn Ave NE Atlanta,GA 30303', phone: '(706)510-7015', 
     web_address: 'wwww.sockfancy.com', image_address: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2jIk4eQpwbBKHWdXy5wsu1zsqYWz3CpsoYE17SAi1fUKAgBHmow', latitude: 33.755319, longitude: -84.380592, category: 4 },
   
-  { name: 'Walters', description: 'Mens sports shoes and clothing store.', address: '66 Decatur St SE Atlanta.GA 30303', phone: '4041234567', web_address: 'http://waltersclothing.com/', image_address: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkFejRo1rDCJ0GVIbzkhURQvvYbdb1o83aArYvDVtAeY0ukdIL', latitude: 33.753332, longitude: -84.387663, category: 4 },
+  { name: "Walter's", description: 'Mens sports shoes and clothing store.', address: '66 Decatur St SE Atlanta.GA 30303', phone: '4041234567', web_address: 'http://waltersclothing.com/', image_address: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkFejRo1rDCJ0GVIbzkhURQvvYbdb1o83aArYvDVtAeY0ukdIL', latitude: 33.753332, longitude: -84.387663, category: 4 },
   
   { name: 'Eyesjets Lifestyle Eyewear', description: 'Fashion spectacles and opticians', address: '33.761889', phone: '(770)765-3359', web_address: 'https://www.facebook.com/eyejets', image_address: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToY74rBTnzlFjkAkvARPUEK_BxeOs2JJtC4eKPnhmL5VvGfCi8iA', latitude: 33.761889, longitude: -84.389789, category: 4},
 
@@ -90,20 +90,20 @@
   { name: 'Letter Box', description: 'A boutique teas, coffee and jewelry shop.', address: '134 Peachtree St NW Atlanta, GA 30303', phone: '(404)521-9063', 
     web_address: 'https://www.facebook.com/theletterboxgeneralstore', image_address: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7he4f17vq5E7SBtqsgDzeftG9sJ2FRCTdZcsO0VgGqgn6SZoi', latitude: 33.757574, longitude: -84387738, category: 4},
 
-  { name: 'Underground Atlanta', description: 'Atlantas shopping and entertainment district', address: '750 Central Ave SW Suite 007, Atlanta, GA 30303', phone: '(404)523-2311', web_address: 'www.underground-atlanta.com/', image_address: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuXiDiqkRdwHXK4mKJGy0DDXZmHoC572Z0NqmwPUrt5HvSRJ-zTg', latitude: 33.752867, longitude: -84388051, category: 4},
+  { name: 'Underground Atlanta', description: "Atlanta's shopping and entertainment district", address: '750 Central Ave SW Suite 007, Atlanta, GA 30303', phone: '(404)523-2311', web_address: 'www.underground-atlanta.com/', image_address: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuXiDiqkRdwHXK4mKJGy0DDXZmHoC572Z0NqmwPUrt5HvSRJ-zTg', latitude: 33.752867, longitude: -84388051, category: 4},
 
   { name: 'Context', description: 'Home decor and gallery store.', address: '75 John Wesley Dobbs Ave Atlanta, GA 30303', phone: '(404)477-3301', web_address: 'http://www.contextgallery.com/', image_address: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm_Pvf4pYFwuAweM7M-D42agKQ8JIGV0eaTBN1gJ3PnabVaVaQ', latitude: 33.756840, longitude: -84.385139, category: 4},
 
-  { name: 'Friedmanss Shoes Inc', description: 'Offers Atlanta some of the best designer brand shoe at a reasonable price.', address: '223 Mitchell St Sw, Atlanta, GA 30303', phone: '(404)523-1134', 
+  { name: "Friedman's Shoes Inc.", description: 'Offers Atlanta some of the best designer brand shoes at a reasonable price.', address: '223 Mitchell St Sw, Atlanta, GA 30303', phone: '(404)523-1134', 
     web_address: 'http://largefeet.com/', image_address: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtxav6mAlb1y4Box6pu-JfJ_xPh37GaAS2rnjT7QoWBKiErLqN', latitude: 33.752347, longitude: --84.394850, category: 4},
 
-  { name: 'Sweet Auburn Grocery', description: 'Your local neighborhood grocery storeSweet Auburn Grocery', address: '20 Auburn Ave NE, Atlanta, GA ', phone: '(404)343-1418', web_address: 'https://plus.google.com/115432696961856782505/about?hl=en', image_address: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpCovEPYAfsKxTfw9Cq0bg6oH_tPjOPZWYwvn_IJPkr5BvK6473A', latitude: 33.755555, longitude: -84.381131, category: 4},
+  { name: 'Sweet Auburn Grocery', description: 'Your local neighborhood grocery store', address: '20 Auburn Ave NE, Atlanta, GA ', phone: '(404)343-1418', web_address: 'https://plus.google.com/115432696961856782505/about?hl=en', image_address: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpCovEPYAfsKxTfw9Cq0bg6oH_tPjOPZWYwvn_IJPkr5BvK6473A', latitude: 33.755555, longitude: -84.381131, category: 4},
 
-  { name: 'Yourvitaminlady Herb Shop', description: 'Vitamin Shop', address: '392 Auburn Ave NE Atlanta, GA 30312', phone: '4041234567', web_address: 'https://plus.google.com/116222572256759143393/about?gl=us&hl=en', image_address: 'http://s3-media3.fl.yelpcdn.com/bphoto/CiNBPjKhXrSgIsgf779qWg/348s.jpg', latitude: 33.755509, longitude: -84.374728, category: 4},
+  { name: 'YourVitaminLady Herb Shop', description: 'Vitamin Shop', address: '392 Auburn Ave NE Atlanta, GA 30312', phone: '(404)1234567', web_address: 'https://plus.google.com/116222572256759143393/about?gl=us&hl=en', image_address: 'http://s3-media3.fl.yelpcdn.com/bphoto/CiNBPjKhXrSgIsgf779qWg/348s.jpg', latitude: 33.755509, longitude: -84.374728, category: 4},
 
-  { name: 'Criminal Records', description: 'An Atlanta music institution', address: '1154 Euclid Ave NE, Atlanta GA 30307', phone: '404.215.9511', web_address: 'http://criminalatl.com/about-us/store-info/', image_address: 'http://cdn.pastemagazine.com/www/system/images/photo_albums/record-store-day-2013/large/photo_2458_0.jpg?1384968217', latitude: 33.765158, longitude: -84.349775, category: 4},
+  { name: 'Criminal Records', description: 'An Atlanta music institution', address: '1154 Euclid Ave NE, Atlanta GA 30307', phone: '(404) 215-9511', web_address: 'http://criminalatl.com/about-us/store-info/', image_address: 'http://cdn.pastemagazine.com/www/system/images/photo_albums/record-store-day-2013/large/photo_2458_0.jpg?1384968217', latitude: 33.765158, longitude: -84.349775, category: 4},
 
-  { name: 'The Byrd’s Box', description: 'Arty, local, handmade goods', address: '171 Auburn Ave NE, Atlanta, Georgia', phone: '4041234567', web_address: 'https://www.facebook.com/thebyrdsbox', image_address: 'http://s3-media1.fl.yelpcdn.com/bphoto/w9dedXdD28hawLAKLnS8Eg/l.jpg', latitude: 33.755319, longitude: -84.380592, category: 4},
+  { name: 'The Byrd’s Box', description: 'Arty, local, handmade goods', address: '171 Auburn Ave NE, Atlanta, Georgia', phone: '(404)1234567', web_address: 'https://www.facebook.com/thebyrdsbox', image_address: 'http://s3-media1.fl.yelpcdn.com/bphoto/w9dedXdD28hawLAKLnS8Eg/l.jpg', latitude: 33.755319, longitude: -84.380592, category: 4},
 
   { name: 'Just Add Honey', description: 'Local tea shop', address: '171 AUBURN AVENUE . ATLANTA, GEORGIA 30303', phone: '(404) 791-0489', web_address: 'http://justaddhoney.net/', image_address: 'http://cdn.shopify.com/s/files/1/0066/4662/t/2/assets/logo.png?8621927464716114827', latitude: 33.755319, longitude: -84.380592, category: 4},
 
@@ -116,7 +116,7 @@
   { name: 'Sweet Auburn Market', description: 'The Sweet Auburn Curb Market is a historic municipal market that houses a wide variety of food vendors, including restaurants and food stands.', address: '209 Edgewood Ave. SE Atlanta, GA 30303', phone: '(404) 659-1665', 
     web_address: 'http://www.sweetauburncurbmarket.com/', image_address: 'http://www.atlantapreservationcenter.com/event_images/Atlanta_Curb_Market_web.jpg', latitude: 33.754076, longitude: -84.379967, category: 4},
 
-  { name: 'Polaris', description: 'Restaurant sits atop the Hyatt Regencys 25 stories. Menu offers Southern  fare and a sampling of great drinks in a retro atmosphere. ', address: '265 Peachtree St NE Atlanta, GA 30303', phone: '4041234567', 
+  { name: 'Polaris', description: "Restaurant sits atop the Hyatt Regency's 25 stories. Menu offers Southern  fare and a sampling of great drinks in a retro atmosphere.", address: '265 Peachtree St NE Atlanta, GA 30303', phone: '4041234567', 
     web_address: 'http://www.hyatt.com/corporate/restaurants/Polaris/en/Polaris.html?src=vanity_polarisatlanta.com', image_address: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0wKs64z0ztCZuh3ZbXhMr_fVGcRjj102z3JqnnKIgpLo3jthd', latitude: 33.761545, longitude: --84.387321, category: 3},
 
   { name: 'Sky Lounge', description: 'Sexy rooftop lounge atop Glenn Hotel, where the out-of-towners and after-work crowd gather into the night.', address: '110 Marietta St NW Atlanta,GA 30303', phone: '4041234567', 
@@ -125,20 +125,20 @@
   { name: 'Alma Cocina', description: 'Fresh Mexican food Kitchen. A modern and new approach to Mexican and Latin cuisine, all within steps for your taste buds to enjoy.', address: '191 Peachtree St NE Atlanta, Georgia 30303', phone: '(404)968-9662', 
     web_address: 'www.alma-atlanta.com', image_address: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTby4TqDGsx5stnQ6t3LWyBuH6jlxYh619ujgHMUt88xqKk8Eqn', latitude: 33.759038, longitude: -84.387259, category: 3},
 
-  { name: 'Sister Luisas Church of the Living Room & Ping Pong Emporium', description: 'This restaurant sits atop the Westin Peachtree Plaza, revolving at 360° views. And the culinary food and drinks add well to the already magnificient views.', address: '466 Edgewood Avenue SE Atlanta, GA 30312', phone: '(404) 522-8275', 
+  { name: "Sister Luisa's Church of the Living Room & Ping Pong Emporium", description: 'This restaurant sits atop the Westin Peachtree Plaza, revolving at 360° views. And the culinary food and drinks add well to the already magnificient views.', address: '466 Edgewood Avenue SE Atlanta, GA 30312', phone: '(404) 522-8275', 
     web_address: 'http://www.sisterlouisaschurch.com/', image_address: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKLiPuVNjhy_9j4GEMXm8XQIT-8Kd8q8QPI7yTEgKx5EOgnLQY', latitude: 33.754477, longitude: -84.372373, category: 3},
 
-  { name: 'Sundials Bar', description: 'This restaurant sits atop the Westin Peachtree Plaza, revolving at 360° views. And the culinary food and drinks add well to the already magnificient views.', address: 'Westin Peachtree Plaza, 210 Peachtree St NE Atlanta, GA 30303', phone: '(404)589-7506', web_address: 'http://www.sundialrestaurant.com/', image_address: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF2EvAc8iFzZPIeO0VqHpGTRDTl99oLgLL6JQEeCM_gvnfMUN3iA', latitude: 33.758964, longitude: -84.388281, category: 3},
+  { name: "Sundial's Bar", description: 'This restaurant sits atop the Westin Peachtree Plaza, revolving at 360° views. And the culinary food and drinks add well to the already magnificient views.', address: 'Westin Peachtree Plaza, 210 Peachtree St NE Atlanta, GA 30303', phone: '(404)589-7506', web_address: 'http://www.sundialrestaurant.com/', image_address: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF2EvAc8iFzZPIeO0VqHpGTRDTl99oLgLL6JQEeCM_gvnfMUN3iA', latitude: 33.758964, longitude: -84.388281, category: 3},
 
-  { name: 'Thelmas Kitchen', description: 'Local downtown Sweet Auburn bbq-rib shack thats finger licking good. A friendly and homey place to catch a bite.', address: '302 Auburn Ave Atlanta, GA 30303', phone: '(404)-688-5855', 
+  { name: "Thelma's Kitchen", description: "Local downtown Sweet Auburn BBQ rib shack that's finger licking good. A friendly and homey place to catch a bite.", address: '302 Auburn Ave Atlanta, GA 30303', phone: '(404)-688-5855', 
     web_address: 'wwww.abc.com', image_address: 'http://media-cdn.tripadvisor.com/media/photo-s/06/3e/72/4d/thelma-s-kitchen.jpg', latitude: 33.755698, longitude: -843777606, category: 3},
 
   { name: 'Original Jamaican Restaurant', description: 'Low key island-inspired food including jerk chicken and curry goat dishes.', address: '166 Trinity Ave Atlanta, GA 30303', phone: '(404) 525-8921', web_address: 'http://pattiestop.com/', image_address: 'http://s3-media3.fl.yelpcdn.com/bphoto/JjJlWf0L11NPK5gSL5N1yA/ls.jpg', latitude: 33.749361, longitude: -84.393545, category: 3},
 
-  { name: 'Pizzeria Versuvius', description: 'Pizzeria for that old home comfort food by the slice or by the pie.', address: '327 Edgewood Ave SE, Atlanta, GA 30312', phone: '(404) 343-4404', 
+  { name: 'Pizzeria Vesuvius', description: 'Pizzeria for that old home comfort food by the slice or by the pie.', address: '327 Edgewood Ave SE, Atlanta, GA 30312', phone: '(404) 343-4404', 
     web_address: 'http://pizzeriavesuvius.com/', image_address: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT50BEWD6aA5h_CxX0_SgANIcLIGOOmfGvW22JY9f06CgIhw2xf', latitude: 33.754153, longitude: -84.376903, category: 3},
 
-  { name: 'Harolds Chicken and Ice Bar', description: 'Great local chicken wings, burgers and beer bar and restaurant in the Edgewood neighborhood.', address: '349 Edgewood Ave, Atlanta, GA 30312', phone: '(404)577-0001', web_address: 'http://www.haroldschickenatl.com/', image_address: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuni4mkltNJoQBW0A_ZVthgyqhsQ7F03mGLjUeSGOXWR6s1i2CZw', latitude: 33.754211, longitude: -84.376186, category: 3},
+  { name: "Harold's Chicken and Ice Bar", description: 'Great local chicken wings, burgers and beer bar and restaurant in the Edgewood neighborhood.', address: '349 Edgewood Ave, Atlanta, GA 30312', phone: '(404)577-0001', web_address: 'http://www.haroldschickenatl.com/', image_address: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuni4mkltNJoQBW0A_ZVthgyqhsQ7F03mGLjUeSGOXWR6s1i2CZw', latitude: 33.754211, longitude: -84.376186, category: 3},
 
   { name: 'Supreme Fish Delight', description: 'Comfort food chain serving fish sandwiches & other casual American fare in a counter-serve space.', address: '362 Auburn Ave NE Atlanta, GA 30312', phone: '(404) 522-5333',web_address: 'supremefishdelight.com', image_address: 'https://s3.grouponcdn.com/images/site_images/1542/7427/IMAGE_Supreme-Fish-Delight.jpg', latitude: 33.755712, longitude: -84.375784, category: 3},
 
@@ -195,7 +195,7 @@
     web_address: 'skyviewatlanta.com', image_address: 'http://media-cdn.tripadvisor.com/media/photo-s/05/9d/ff/79/skyview-atlanta.jpg', latitude: 33.758847, longitude: -84.391811, category: 2},
 
   { name: 'Agathas A Taste of Mystery', description: 'Audience members eat a 5-course American meal with wine while actors perform a murder-mystery drama.', address: '161 Peachtree Center Ave NE Atlanta, GA 30303', phone: '(404) 584-2255', 
-    web_address: 'agathas.com', image_address: 'http://renaissance-hotels.marriott.com/uploads/attraction/thumb/ur1ayg7n.jpg', latitude: 33.759373, longitude: -84.385509, category: 2},
+    web_address: 'http://www.agathas.com', image_address: 'http://renaissance-hotels.marriott.com/uploads/attraction/thumb/ur1ayg7n.jpg', latitude: 33.759373, longitude: -84.385509, category: 2},
 
   { name: 'Pemberton Place', description: 'Named for Coca-Cola inventor John Pemberton, the 22-acre complex is home to the Georgia Aquarium, the World of Coca-Cola, and the planned National Center for Civil and Human Rights.', address: '121 Baker St NW Atlanta, GA 30313', phone: '(404) 676-5151', web_address: 'http://www.atlantadowntown.com/go/pemberton-place', image_address: 'http://tryps.rockefeller.edu/Images/flora%20logan%20pemberton%20place%20tryps2smaller.jpg', latitude: 33.762742, longitude: -84.392664, category: 2},
 
