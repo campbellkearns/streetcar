@@ -9,8 +9,8 @@ angular.module('streetCarApp')
   angular.extend($scope, {
     markers: [],
     center: {
-      lat: 33.77,
-      lng: -84.414,
+      lat: 33.755560,
+      lng: -84.388640,
       zoom: 14
     },
     layers: {
