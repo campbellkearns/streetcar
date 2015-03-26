@@ -46,5 +46,17 @@ angular.module('streetCarApp')
     });
   };
 
+  $scope.dateChooserState = {
+    opened: false
+  };
+
+  $scope.open = function($event) {
+    console.log('open called');
+    $event.preventDefault();
+    $event.stopPropagation();
+
+    $scope.dateChooserState.opened = true;
+  };
+
 
   });
