@@ -17,8 +17,6 @@ p {
 	text-align: justify;
 	margin: 0 10px;
 }
-
-
 input {
 	color: #000;
 }
@@ -78,7 +76,7 @@ body > div.header > div > div > div.navbar-header > button {
 #js-navbar-collapse > ul > li:nth-child(1) > a {
 	margin: 5px 0 5px 0px;
 }
-.trolley {display: none;}
+
 .container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
 	margin: 0;
 }
@@ -91,9 +89,6 @@ body .main .mobile-home {
 	padding: 0;
 }
 
-body .main .desktop {
-	display: none;
-}
 
 /*-------------ABOUT----------------*/
 .group-person {
@@ -102,7 +97,7 @@ body .main .desktop {
 	margin: 0 auto 5px auto;
 }
 
-.group-person .about-left-container img	{
+.group-person img	{
 	float: left;
 	width: 100px;
 	height: 100px;
@@ -111,7 +106,7 @@ body .main .desktop {
 	border: 7px solid #97b457;
 }
 
-.group-person .about-right-container {
+.group-person div {
 	float: left;
 	margin: 0 5px;
 	width: 64%;
@@ -190,7 +185,7 @@ body .main .desktop {
 }
 .create-itin form input {
 	width: 90%;
-	height: 40px;
+	height: 35px;
 	float: left;
 	margin-top:10px;
 }
@@ -289,9 +284,11 @@ and (min-width : 481px) {
 	background-size: 100% 100%;
 	margin: 5px 0 5px -40px;
 }
+#js-navbar-collapse > ul > li:nth-child(3) > a{
+	padding-top: 30px;
+}
 
-.mobile-logo {display: none;}
-.main body {
+.main  {
   padding: 0;
   margin: 0;
   font-family: Arial, sans-serif;
@@ -299,9 +296,6 @@ and (min-width : 481px) {
   background: url(/images/shi.png) repeat top left;
 }
 
-.main .mobile-home {
-	display: none;
-}
 .main h1 {
   font-size: 20px;
   font-weight: normal;
@@ -391,7 +385,9 @@ and (min-width : 481px) {
 	background-position: center;
 }
 
-/*--------------LOGIN--------------------*/
+
+/*---------------LOGIN---------------*/
+
 .welcome {
 	width: 55%;
 	height: auto;
@@ -399,6 +395,39 @@ and (min-width : 481px) {
 	padding: 20px;
 	margin: 60px auto;
 }
+.welcome h1	{
+	font-size: 30px;
+	color: #fff;
+	margin: 0 0 20px 0; 
+}
+
+.welcome form {
+	width: 85%;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+.welcome input {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+}
+
+.welcome p {
+	margin: 0;
+	font-size: 20px;
+}
+
+.welcome button {
+	margin-top: 20px;
+	height: 55px;
+
+	color: #fff;
+	font-size: 2em;
+}
+.welcome a {
+	float: right;
+}
+
 
 /*-------------ITINERARY----------------*/
   
@@ -419,19 +448,21 @@ and (min-width : 481px) {
 
 .event > div {
 	background-color: rgba(0,0,0,0.75);
-
+    opacity: 0;
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-transition:  .5s linear;
+    bottom: 0px;
+    left: 0;
+    -webkit-transition: opacity .5s linear;
     text-shadow: #000 1px 1px 0;
     color: #ccc;
 }
 
 .event:hover > div {
     display: block;
-    top: 0px;
-    -webkit-transition:  .5s linear;
+    bottom: 0px;
+    -webkit-transition: opacity .5s linear;
     opacity: 1.0;
 }
 .event .contacting {
@@ -450,62 +481,40 @@ and (min-width : 481px) {
 .event button 	{
 	position: absolute;
 	bottom: 10px;
-	z-index: 100;
-	left: 205px;
-	margin: 0;
+	left: 110px;
 }
 
-.event .description {
-	width: 100%;
-	height: 350px;
-	margin: 0;
-	position: absolute;
-	top: 279px;
-}
-.event .event-left-container {
-	margin: 0;
-}
 .create-itin form	{
-	margin: 0 26%;
+	margin-left: 50px;
 }
 .create-itin form input {
 		width: 250px;
-		height: 40px;
 		margin-right: 10px;
 }
 .mapping ul {
-	width: 100%;
+	width: 35%;
 }
 .mapping h3, .mapping h5 {
 	text-align: center;
 }
 
 .mapping .map {
-	float: left;
+		float: left;
 	margin: 0 auto;
-}
-
-.mapping .map-mobile {
-	display: none;
-}
-
-.mapping .map-desktop {
-	display: block;
-	margin: 2% 0;
 }
 
 .mapping .event {
 	position: relative;
   overflow: hidden;
-	width: 190px;
-	height: 200px;
-	margin: 10px 5px 0 0;
+	width: 100px;
+	height: 100px;
+	margin: 0%;
 
 }
 
 .mapping .event img {
-	width: 100%;
-	height: 200px;
+	width: 100px;
+	height: 100px;
   padding: 0;
 }
 
@@ -524,7 +533,6 @@ and (min-width : 481px) {
 }
 
 .about { margin-bottom: 20px;}
-
 .group-person {
 	width: 48%;
 	height: 325px;
@@ -533,59 +541,24 @@ and (min-width : 481px) {
 	border: solid 1px #97b457;
 }
 
-.group-person .about-left-container {
-	height: 310px;
-	width: 48%;
-	margin: 1%;
-	float:left;
-}
-.about-p {
-	width: 530px;
-	text-align:justify;
-	margin: 0 auto;
-	font-size:16px;
-}
-.group-person  .about-left-container img	{
+.group-person img	{
 	float: none;
-	width: 75%;
-	height: 275px;
-	margin: 5%;
-	margin-bottom: 1%;
-	border-radius: 0px;
+	width: 150px;
+	height: 150px;
+	margin: 5% 25%;
+	border-radius: 150px;
 }
-.group-person .about-left-container a {
-	width: 100%;
-}
-.about-left-container ul {
-	width: 85%;
-}
-.group-person h3 {
- margin-top:90px;
-}
-.group-person .about-right-container {
+.group-person div {
 	float: left;
 	margin: 0 auto;
-	width: 45%;
+	width: 95%;
+	height: 150px;
 }
-.group-person .about-right-container p {
-	margin: 40px auto;
-}
-
 .group-person section {
 	width: 100%;
 	height: 150px;
 	margin: 0 auto;
 }
-.group-person .group-person-description {width: 100%; margin: 0 auto; padding-left: 10px; text-align: center;}
+.group-person .group-person-description {width: 100%; margin: 0 auto; padding-left: 10px;}
 
 }
-
-
-
-
-
-
-
-
-
-

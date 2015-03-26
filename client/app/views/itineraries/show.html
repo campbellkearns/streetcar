@@ -3,11 +3,11 @@
   <h2>{{ itinerary.name }}</h2>
   <h5>{{ itinerary.date | date:'EEEE, MMMM d, yyyy' }}</h5>
 
-  <div ng-controller='MapCtrl' class="map-desktop">
-    <leaflet markers="markers" center="center" layers="layers" width="675px" height="450px" class="map"></leaflet>
-  </div>
   
   <ul>
+  <div ng-controller='MapCtrl' class="map-desktop">
+    <leaflet markers="markers" center="center" layers="layers" width="1170px" height="275px" class="map"></leaflet>
+  </div>
   <div ng-controller='MobileMapCtrl' class="map-mobile">
     <leaflet markers="markers" center="center" layers="layers" width="300px" height="300px" class="map"></leaflet>
   </div>
