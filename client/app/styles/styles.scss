@@ -337,9 +337,9 @@ and (min-width : 481px) {
 }
 
 .art {
-  z-index:750;
+  z-index:730;
  /* margin-left: -500;*/
-  height:33vw;
+  height:40vw;
 }
 
 .middle-trolley {
@@ -579,13 +579,10 @@ and (min-width : 481px) {
 .group-person .group-person-description {width: 100%; margin: 0 auto; padding-left: 10px; text-align: center;}
 
 }
-
-
-
-
-
-
-
-
-
+.new-itinerary-date {
+  width: 272px;
+}
+.date-picker{
+  border-radius: 0px;
+}
 

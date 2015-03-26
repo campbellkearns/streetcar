@@ -3,13 +3,28 @@
 <h1>Create A New Itinerary<span>learn more</span></h1>
 
   <form ng-submit="addEvents()">
-    <input placeholder="Itinerary Name"
+    <input placeholder="Name"
            ng-model="newItineraryName"
            ng-disabled="saving" autofocus>
-    <input placeholder="Date"
-           ng-model="newItineraryDate"
-           ng-disabled="saving" autofocus
-           onaftersave="getItineraries">      
+    <div class="new-itinerary-date">
+      <span class="input-group">
+        <input type="text"
+               class="form-control date-picker"
+               datepicker-popup="''dd-MMMM-yyyy'"
+               ng-model="newItineraryDate"
+               is-open="dateChooserState.opened"
+               datepicker-options="dateOptions"
+               ng-required="true"
+               close-text="Close"
+               placeholder="Date" />
+        <span class="input-group-btn">
+          <button type="button" class="date-picker btn btn-default" ng-click="open($event)">
+            <i class="glyphicon glyphicon-calendar"></i>
+          </button>
+        </span>
+      </p>
+    </div>
+
     <button type="submit" value="Submit">Create</button>
   </form>
 
