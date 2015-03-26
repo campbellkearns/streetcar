@@ -512,7 +512,7 @@ and (min-width : 481px) {
 	float: none;
 	width: 150px;
 	height: 150px;
-	margin: 5% 25%;
+	margin: 5% 39%;
 	border-radius: 150px;
 }
 .group-person div {
@@ -526,6 +526,6 @@ and (min-width : 481px) {
 	height: 150px;
 	margin: 0 auto;
 }
-.group-person .group-person-description {width: 100%; margin: 0 auto; padding-left: 10px;}
+.group-person .group-person-description {width: 100%; margin: 0 auto; padding-left: 10px; text-align: center;}
 
 }
