@@ -1,27 +1,9 @@
-<h1>Create A New Itinerary</h1>
-
 <div ng-controller='GetEventsCtrl' class="create-itin">
-  <ul>
-    <li class="event" ng-repeat="event in events" >
-      <img src="{{ event.image_address }}">
-      <div class="description">
-        <div>
-          <h2>{{ event.name }}</h2> 
-          <p>{{ event.description }}</p>
-          <p class="contacting">{{ event.address }}</p>
-          <p>{{ event.phone }}</p>
-          <a href="{{ event.web_address }}" target=_blank>Website</a>
-          <button ng-click="deleteEvent(events.indexOf(event))">Get A New Event</button>
-        </div>
-      </div>
-    </li>
-  </ul>
-  <div ng-controller='NewMapCtrl' width=100% height=100%>
-    <leaflet markers="markers" center="center" layers="layers" width="960px" height="480px"></leaflet>
-  </div>
+  
+<h1>Create A New Itinerary<span>learn more</span></h1>
 
   <form ng-submit="addEvents()">
-    <input placeholder="Name"
+    <input placeholder="Itinerary Name"
            ng-model="newItineraryName"
            ng-disabled="saving" autofocus>
     <input placeholder="Date"
@@ -31,6 +13,23 @@
     <button type="submit" value="Submit">Create</button>
   </form>
 
+  <ul>
+    <li class="event" ng-repeat="event in events" >
+      <div class="event-left-container">
+       <img src="{{ event.image_address }}">
+        <button ng-click="deleteEvent(events.indexOf(event))">Get A New Event</button>
+      </div>
+      <div class="description">
+        <div>
+          <h2>{{ event.name }}</h2> 
+          <p class="contacting">{{ event.address }}</p>
+          <p>{{ event.phone }}</p>
+          <a href="{{ event.web_address }}" target=_blank>Website</a>
+          <p>{{ event.description }}</p>
+        </div>
+      </div>
+    </li>
+  </ul>
 </div>
 
 

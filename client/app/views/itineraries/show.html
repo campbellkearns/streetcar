@@ -1,25 +1,31 @@
-<h1>Itineraries Show</h1>
-
 <div ng-controller='ShowItineraryEventsCtrl' class="mapping">
-  <h3>{{ itinerary.name }}</h3>
+  <h2>{{ itinerary.name }}</h2>
   <h5>{{ itinerary.date | date:'EEEE, MMMM d, yyyy' }}</h5>
-  
-  <div ng-controller='MapCtrl'>
-    <leaflet markers="markers" center="center" layers="layers" width="1170px" height="650px" class="map"></leaflet>
+
+  <div ng-controller='MapCtrl' class="map-desktop">
+    <leaflet markers="markers" center="center" layers="layers" width="675px" height="450px" class="map"></leaflet>
   </div>
+  
+  <ul>
+  <div ng-controller='MobileMapCtrl' class="map-mobile">
+    <leaflet markers="markers" center="center" layers="layers" width="300px" height="300px" class="map"></leaflet>
+  </div>
+
 <!-- Events -->
-  <ul >
     <li ng-repeat="event in itineraryEvents" class="event"> 
-      <img src="{{ event.image_address }}">
+      <div class="event-left-container">
+        <img ng-src="{{event.image_address}}">
+      </div>
       <div class="description">
         <div>
           <h2>{{ event.name }}</h2> 
-          <p>{{ event.description }}</p>
           <p class="contacting">{{ event.address }}</p>
           <p>{{ event.phone }}</p>
-          <a href="{{ event.web_address }}" target=_blank>Website</a>
+          <a href="{{ event.web_address }}" target="_blank">Website</a>
+          <p>{{ event.description }}</p>
         </div>
       </div>
     </li>
-  </ul>  
+  </ul>
+
 </div>
